@@ -1,1 +1,34 @@
-/* Put your custom styles here */
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  text-align: center;
+}
+
+.cover-frame {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+.cover-frame-main {
+  background-image: url("../img/cover-sample.jpg");
+}
+.cover-frame-residential {
+  background-image: url("../img/cover-sample2.jpg");
+}
+.cover-frame-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cover-frame-inner-container {
+  margin-right: auto;
+  margin-left: auto;
+}
