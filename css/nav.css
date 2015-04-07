@@ -1,0 +1,66 @@
+.navbar {
+  height: 95px;
+}
+.navbar .navbar-header {
+  float: none;
+}
+.navbar .navbar-header .navbar-brand {
+  font-size: 12pt;
+  font-family: 'lighthaus', sans;
+  position: relative;
+  float: none;
+  display: inline-block;
+  height: 95px;
+  padding: 34px 34px;
+}
+.navbar .navbar-header .navbar-brand>img {
+  height: 27px;
+  display: inline-block;
+}
+
+.navbar .navbar-header .navbar-toggle-button {
+  position: absolute; left: 40px; top: 50%;
+  margin-top: -19px;
+}
+
+.navbar .navbar-header .navbar-toggle-button {
+  cursor: pointer; padding: 18px 50px 20px 0px;
+}
+
+.navbar .navbar-header .navbar-toggle-button span,
+.navbar .navbar-header .navbar-toggle-button span:before,
+.navbar .navbar-header .navbar-toggle-button span:after {
+  cursor: pointer;
+  height: 2px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.navbar .navbar-header .navbar-toggle-button span:before {
+  top: -10px;
+}
+.navbar .navbar-header .navbar-toggle-button span:after {
+  top: 10px;
+}
+
+.navbar .navbar-header .navbar-toggle-button span,
+.navbar .navbar-header .navbar-toggle-button span:before,
+.navbar .navbar-header .navbar-toggle-button span:after {
+  transition: all 500ms ease-in-out;
+}
+.navbar .navbar-header .navbar-toggle-button.active span {
+  background-color: transparent;
+}
+
+.navbar .navbar-header .navbar-toggle-button.active span:before,
+.navbar .navbar-header .navbar-toggle-button.active span:after {
+  top: 0;
+}
+.navbar .navbar-header .navbar-toggle-button.active span:before {
+  transform: rotate(45deg);
+}
+.navbar .navbar-header .navbar-toggle-button.active span:after {
+  transform: rotate(-45deg);
+}
