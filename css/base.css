@@ -1,0 +1,90 @@
+@import 'fonts.css';
+@import 'nav.css';
+@import 'main.css';
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+  color: white;
+  font-family: 'Lora', sans;
+}
+body {
+  text-align: center;
+}
+
+.cover-frame {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-size: cover;
+}
+.cover-frame-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cover-frame-inner-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.carousel {
+  height: 100%;
+  position: relative;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-inner > .item {
+  height: 100%;
+}
+.carousel-item-sample-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('../img/cover-slide1.jpg');
+}
+
+.cover-frame-footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 230px;
+  width: 100%;
+
+  background: -webkit-linear-gradient(transparent 0%, black 160%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent 0%, black 160%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent 0%, black 160%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent 0%, black 160%); /* Standard syntax */
+}
+.cover-frame-footer-next-link {
+  display: block;
+  width: 320px;
+  margin: 110px auto 0;
+  color: white;
+  text-decoration: none;
+  font-size: 37px;
+  font-style: italic;
+}
+.cover-frame-footer-next-link:hover {
+  color: #d7df23;
+  text-decoration: none;
+}
+.cover-frame-footer-next-link::after {
+  content: " ";
+  display: block;
+  margin: 15px auto 0;
+  width: 114px;
+  height: 28px;
+  border-top: 28px solid white;
+  border-left: 57px solid transparent;
+  border-right: 57px solid transparent;
+}
+.cover-frame-footer-next-link:hover::after {
+  border-top-color: #d7df23;
+}

@@ -3,7 +3,7 @@
 .navbar {
   height: 95px;
   border: 0;
-  font-family: 'Lora', sans;
+  color: black;
 }
 .navbar .navbar-header {
   float: none;
