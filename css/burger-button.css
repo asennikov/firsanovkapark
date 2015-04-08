@@ -1,0 +1,41 @@
+.burger-button {
+  cursor: pointer; padding: 18px 50px 20px 0px;
+}
+
+.burger-button span,
+.burger-button span:before,
+.burger-button span:after {
+  cursor: pointer;
+  height: 2px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+}
+.burger-button span:before {
+  top: -10px;
+}
+.burger-button span:after {
+  top: 10px;
+}
+
+.burger-button span,
+.burger-button span:before,
+.burger-button span:after {
+  transition: all 300ms ease-in-out;
+}
+.burger-button.active span {
+  background-color: transparent;
+}
+
+.burger-button.active span:before,
+.burger-button.active span:after {
+  top: 0;
+}
+.burger-button.active span:before {
+  transform: rotate(45deg);
+}
+.burger-button.active span:after {
+  transform: rotate(-45deg);
+}

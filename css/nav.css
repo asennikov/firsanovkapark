@@ -1,12 +1,18 @@
+@import 'burger-button.css';
+
 .navbar {
   height: 95px;
+  border: 0;
 }
 .navbar .navbar-header {
   float: none;
+  position: relative;
+  background: white;
+  z-index: 2;
 }
 .navbar .navbar-header .navbar-brand {
   font-size: 12pt;
-  font-family: 'lighthaus', sans;
+  font-family: 'Lighthaus', sans;
   position: relative;
   float: none;
   display: inline-block;
@@ -17,50 +23,73 @@
   height: 27px;
   display: inline-block;
 }
-
-.navbar .navbar-header .navbar-toggle-button {
+.navbar .navbar-header .burger-button {
   position: absolute; left: 40px; top: 50%;
   margin-top: -19px;
 }
 
-.navbar .navbar-header .navbar-toggle-button {
-  cursor: pointer; padding: 18px 50px 20px 0px;
-}
+.navbar-sliding-menu {
+  background: white;
+  position: fixed;
+  padding-top: 8%;
+  height: 100%;
+  padding-bottom: 8%;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
 
-.navbar .navbar-header .navbar-toggle-button span,
-.navbar .navbar-header .navbar-toggle-button span:before,
-.navbar .navbar-header .navbar-toggle-button span:after {
-  cursor: pointer;
-  height: 2px;
-  width: 50px;
-  background: black;
-  position: absolute;
-  display: block;
-  content: '';
-}
-.navbar .navbar-header .navbar-toggle-button span:before {
-  top: -10px;
-}
-.navbar .navbar-header .navbar-toggle-button span:after {
-  top: 10px;
-}
-
-.navbar .navbar-header .navbar-toggle-button span,
-.navbar .navbar-header .navbar-toggle-button span:before,
-.navbar .navbar-header .navbar-toggle-button span:after {
+  top: -100%;
   transition: all 500ms ease-in-out;
 }
-.navbar .navbar-header .navbar-toggle-button.active span {
-  background-color: transparent;
-}
-
-.navbar .navbar-header .navbar-toggle-button.active span:before,
-.navbar .navbar-header .navbar-toggle-button.active span:after {
+.navbar-sliding-menu.active {
   top: 0;
 }
-.navbar .navbar-header .navbar-toggle-button.active span:before {
-  transform: rotate(45deg);
+.navbar-sliding-menu ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column; /* works with row or column */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-.navbar .navbar-header .navbar-toggle-button.active span:after {
-  transform: rotate(-45deg);
+.navbar-sliding-menu ul li {
+  display: block;
+  width: 100%;
+  font-family: 'Lora', sans;
+  text-align: center;
+
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+}
+.navbar-sliding-menu ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 0 100px;
+  font-size: 75px;
+  font-style: italic;
+  text-decoration: none;
+
+  color: white;
+  transition: all 500ms ease-in-out;
+}
+.navbar-sliding-menu.active ul li a {
+  color: black;
+}
+.navbar-sliding-menu ul li a:hover::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: url('../img/menu-hover-bg.png') center;
+  z-index: -1;
 }

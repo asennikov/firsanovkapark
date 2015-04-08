@@ -1,5 +1,8 @@
 $(document).ready(function(){
-  $('.navbar-toggle-button').click(function() {
+  $('.burger-button').click(function() {
     $(this).toggleClass('active');
+    $('.navbar-sliding-menu').toggleClass('active');
+
+    return false;
   });
 });
