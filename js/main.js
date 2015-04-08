@@ -5,4 +5,8 @@ $(document).ready(function(){
 
     return false;
   });
+
+  $('.navbar-sliding-menu').click(function() {
+    $('.burger-button').click();
+  });
 });
