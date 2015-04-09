@@ -1,0 +1,85 @@
+.fp-slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.fp-slidesNav.bottom {
+  left: 131px;
+  bottom: 30px;
+  z-index: 14;
+}
+.fp-slidesNav.bottom ul li {
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background: white;
+  border-width: 0;
+  margin: 0 8px;
+}
+.fp-slidesNav.bottom ul li a span,
+.fp-slidesNav.bottom ul li:hover a span,
+.fp-slidesNav.bottom ul li:hover a.active span {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+.fp-slidesNav.bottom ul li a span {
+  opacity: 0;
+  background: #a7a9ac;
+
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.fp-slidesNav.bottom ul li a.active span,
+.fp-slidesNav.bottom ul li:hover a span {
+  opacity: 1;
+}
+.fp-slidesNav ul li:hover a:not(.active) span {
+  background: #d7df23;
+}
+.fp-controlArrow.fp-prev,
+.fp-controlArrow.fp-next {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 75px;
+  margin-top: -68px;
+  background-size: 40px 75px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: content-box;
+  padding: 30px;
+  border: 0;
+}
+.fp-controlArrow.fp-prev {
+  left: 40px;
+  background-image: url('../img/svg/arrow-left.svg');
+}
+.fp-controlArrow.fp-next {
+  right: 40px;
+  background-image: url('../img/svg/arrow-right.svg');
+}
+.fp-controlArrow.fp-prev:hover {
+  background-image: url('../img/svg/arrow-left-hover.svg');
+}
+.fp-controlArrow.fp-next:hover {
+  background-image: url('../img/svg/arrow-right-hover.svg');
+}
+.slide-sample-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('../img/cover-slide1.jpg');
+}
+.slides-nav-icon {
+  position: absolute;
+  left: 50px;
+  bottom: 36px;
+  width: 163px;
+  z-index: 14;
+}

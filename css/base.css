@@ -3,7 +3,7 @@
  */
 @import 'fonts.css';
 @import 'nav.css';
-@import 'carousel.css';
+@import 'slides.css';
 
 /*
  * Frames
@@ -25,6 +25,17 @@ body {
 body {
   text-align: center;
 }
+
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+
+section:nth-of-type(2) { top: -95px; }
+section:nth-of-type(3) { top: -190px; }
+section:nth-of-type(4) { top: -285px; }
+section:nth-of-type(5) { top: -380px; }
+section:nth-of-type(6) { top: -475px; }
 
 .cover-frame {
   position: relative;

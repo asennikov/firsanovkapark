@@ -6,7 +6,16 @@ $(document).ready(function(){
     return false;
   });
 
-  $('.navbar-sliding-menu').click(function() {
+  $('.navbar-sliding-menu a').click(function() {
     $('.burger-button').click();
   });
+
+  $('.wrapper').fullpage({
+    anchors: ['main', 'plan', 'atmosphere', 'advantages', 'map', 'application'],
+    sectionSelector: 'section',
+    slideSelector: '.slide',
+    slidesNavigation: true,
+    paddingTop: 95
+  });
+
 });

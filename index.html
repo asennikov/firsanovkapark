@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="bower_components/fullpage.js/jquery.fullPage.css" rel="stylesheet" type="text/css" />
+
     <!-- Custom css -->
     <link href="css/base.css" rel="stylesheet">
 
@@ -24,7 +26,7 @@
 
       <div class="navbar-header">
         <a class="burger-button" href="#"><span></span></a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#main">
           <img src="img/svg/logo.svg" alt="Firsanovka Park" />
         </a>
         <div class="navbar-header-contacts">
@@ -45,101 +47,96 @@
       </div>
     </nav>
 
+    <div class="wrapper">
+      <section data-anchor="main">
+        <div class="cover-frame cover-frame-main">
+          <div class="cover-frame-container">
 
-    <div id="main" class="cover-frame cover-frame-main">
-      <div class="cover-frame-container">
+            <h1>ЖК с особенной атмосферой</h1>
 
-        <h1>ЖК с особенной атмосферой</h1>
+            <p>
+              Прокручивайте страницу, <br />
+              чтобы узнать все преимущества ЖК
+            </p>
 
-        <p>
-          Прокручивайте страницу, <br />
-          чтобы узнать все преимущества ЖК
-        </p>
+            <img src="img/svg/scroll.svg" class="cover-frame-main-scoll-icon" alt="Scroll down" />
 
-        <img src="img/svg/scroll.svg" class="cover-frame-main-scoll-icon" alt="Scroll down" />
-
-      </div>
-
-      <div class="cover-frame-footer">
-        <a href="#plan" class="cover-frame-footer-next-link">План ЖКХ</a>
-      </div>
-    </div>
-
-    <div id="plan" class="cover-frame cover-frame-plan">
-      <div class="cover-frame-container">
-        <p>Выберите дом, чтобы посмотреть планировку</p>
-      </div>
-
-      <div id="carousel-plan" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="none">
-
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-plan" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-plan" data-slide-to="1"></li>
-          <li data-target="#carousel-plan" data-slide-to="2"></li>
-        </ol>
-
-        <img class="carousel-indicators-icon" src="img/svg/rotate.svg" alt="Cycled carousel" />
-
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <div class="carousel-item-sample-image"></div>
           </div>
-          <div class="item">
-            <div class="carousel-item-sample-image"></div>
-          </div>
-          <div class="item">
-            <div class="carousel-item-sample-image"></div>
+
+          <div class="cover-frame-footer">
+            <a href="#plan" class="cover-frame-footer-next-link">План ЖКХ</a>
           </div>
         </div>
+      </section>
 
-        <a class="left carousel-control" href="#carousel-plan" role="button" data-slide="prev">
-          <div class="arrow arrow-left"></div>
-        </a>
-        <a class="right carousel-control" href="#carousel-plan" role="button" data-slide="next">
-          <div class="arrow arrow-right"></div>
-        </a>
-      </div>
+      <section data-anchor="plan">
+        <div class="cover-frame cover-frame-plan">
+          <div class="cover-frame-container">
+            <p>Выберите дом, чтобы посмотреть планировку</p>
+          </div>
 
-      <div class="cover-frame-footer">
-        <a href="#atmosphere" class="cover-frame-footer-next-link">Атмосфера</a>
-        <a href="#" class="cover-frame-footer-side-link">Фотографии<br />сданных домов</a>
-      </div>
-    </div>
+          <div class="slide">
+            <div class="slide-sample-image"></div>
+          </div>
+          <div class="slide">
+            <div class="slide-sample-image"></div>
+          </div>
+          <div class="slide">
+            <div class="slide-sample-image"></div>
+          </div>
 
-    <div id="atmosphere" class="cover-frame cover-frame-atmosphere">
-      <div class="cover-frame-container">
+          <img src="img/svg/rotate.svg" class="slides-nav-icon" />
 
-      </div>
+          <div class="cover-frame-footer">
+            <a href="#atmosphere" class="cover-frame-footer-next-link">Атмосфера</a>
+            <a href="#" class="cover-frame-footer-side-link">Фотографии<br />сданных домов</a>
+          </div>
+        </div>
+      </section>
 
-      <div class="cover-frame-footer">
-        <a href="#advantages" class="cover-frame-footer-next-link">Преимущества</a>
-      </div>
-    </div>
+      <section data-anchor="atmosphere">
+        <div class="cover-frame cover-frame-main">
+          <div class="cover-frame-container">
 
-    <div id="advantages" class="cover-frame cover-frame-advantages">
-      <div class="cover-frame-container">
+          </div>
 
-      </div>
+          <div class="cover-frame-footer">
+            <a href="#advantages" class="cover-frame-footer-next-link">Преимущества</a>
+          </div>
+        </div>
+      </section>
 
-      <div class="cover-frame-footer">
-        <a href="#map" class="cover-frame-footer-next-link">Карта проезда</a>
-      </div>
-    </div>
+      <section data-anchor="advantages">
+        <div class="cover-frame cover-frame-main">
+          <div class="cover-frame-container">
 
-    <div id="map" class="cover-frame cover-frame-map">
-      <div class="cover-frame-container">
+          </div>
 
-      </div>
+          <div class="cover-frame-footer">
+            <a href="#map" class="cover-frame-footer-next-link">Карта проезда</a>
+          </div>
+        </div>
+      </section>
 
-      <div class="cover-frame-footer">
-        <a href="#application" class="cover-frame-footer-next-link">Оставить заявку</a>
-      </div>
-    </div>
+      <section data-anchor="map">
+        <div class="cover-frame cover-frame-main">
+          <div class="cover-frame-container">
 
-    <div id="application" class="cover-frame cover-frame-application">
-      <div class="cover-frame-container">
+          </div>
 
-      </div>
+          <div class="cover-frame-footer">
+            <a href="#application" class="cover-frame-footer-next-link">Оставить заявку</a>
+          </div>
+        </div>
+      </section>
+
+      <section data-anchor="application">
+        <div class="cover-frame cover-frame-main">
+          <div class="cover-frame-container">
+
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Modal Sample -->
@@ -164,6 +161,7 @@
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
