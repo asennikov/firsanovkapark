@@ -1,6 +1,15 @@
+/*
+ * Utilities
+ */
 @import 'fonts.css';
 @import 'nav.css';
-@import 'main.css';
+@import 'carousel.css';
+
+/*
+ * Frames
+ */
+ @import 'main.css';
+ @import 'plan.css';
 
 /*
  * Base structure
@@ -18,35 +27,24 @@ body {
 }
 
 .cover-frame {
-  display: table;
+  position: relative;
   width: 100%;
   height: 100%;
   min-height: 100%;
   background-size: cover;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column; /* works with row or column */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-.cover-frame-inner {
-  display: table-cell;
-  vertical-align: middle;
-}
-.cover-frame-inner-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-.carousel {
-  height: 100%;
+.cover-frame-container {
   position: relative;
-}
-.carousel-inner {
-  height: 100%;
-}
-.carousel-inner > .item {
-  height: 100%;
-}
-.carousel-item-sample-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-image: url('../img/cover-slide1.jpg');
+  z-index: 1;
 }
 
 .cover-frame-footer {
@@ -56,13 +54,15 @@ body {
   left: 0;
   height: 230px;
   width: 100%;
+  z-index: 13;
 
   background: -webkit-linear-gradient(transparent 0%, black 160%); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(transparent 0%, black 160%); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(transparent 0%, black 160%); /* For Firefox 3.6 to 15 */
   background: linear-gradient(transparent 0%, black 160%); /* Standard syntax */
 }
-.cover-frame-footer-next-link {
+.cover-frame-footer-next-link,
+.cover-frame-footer-next-link:focus {
   display: block;
   width: 320px;
   margin: 110px auto 0;
@@ -87,4 +87,20 @@ body {
 }
 .cover-frame-footer-next-link:hover::after {
   border-top-color: #d7df23;
+}
+.cover-frame-footer-side-link,
+.cover-frame-footer-side-link:focus {
+  position: absolute;
+  right: 50px;
+  bottom: 60px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  font-style: italic;
+  text-align: right;
+}
+.cover-frame-footer-side-link:hover {
+  color: #d7df23;
+  text-decoration: none;
 }

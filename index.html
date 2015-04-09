@@ -47,19 +47,17 @@
 
 
     <div id="main" class="cover-frame cover-frame-main">
-      <div class="cover-frame-inner">
-        <div class="cover-frame-inner-container">
+      <div class="cover-frame-container">
 
-          <h1>ЖК с особенной атмосферой</h1>
+        <h1>ЖК с особенной атмосферой</h1>
 
-          <p>
-            Прокручивайте страницу, <br />
-            чтобы узнать все преимущества ЖК
-          </p>
+        <p>
+          Прокручивайте страницу, <br />
+          чтобы узнать все преимущества ЖК
+        </p>
 
-          <img src="img/svg/scroll.svg" class="cover-frame-main-scoll-icon" alt="Scroll down" />
+        <img src="img/svg/scroll.svg" class="cover-frame-main-scoll-icon" alt="Scroll down" />
 
-        </div>
       </div>
 
       <div class="cover-frame-footer">
@@ -67,38 +65,44 @@
       </div>
     </div>
 
-    <div id="plan" class="cover-frame">
-      <div class="cover-frame-inner">
+    <div id="plan" class="cover-frame cover-frame-plan">
+      <div class="cover-frame-container">
+        <p>Выберите дом, чтобы посмотреть планировку</p>
+      </div>
 
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="none">
+      <div id="carousel-plan" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="none">
 
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          </ol>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-plan" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-plan" data-slide-to="1"></li>
+          <li data-target="#carousel-plan" data-slide-to="2"></li>
+        </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <div class="carousel-item-sample-image"></div>
-            </div>
-            <div class="item">
-              <div class="carousel-item-sample-image"></div>
-            </div>
+        <img class="carousel-indicators-icon" src="img/svg/rotate.svg" alt="Cycled carousel" />
+
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="carousel-item-sample-image"></div>
           </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="item">
+            <div class="carousel-item-sample-image"></div>
+          </div>
+          <div class="item">
+            <div class="carousel-item-sample-image"></div>
+          </div>
         </div>
 
+        <a class="left carousel-control" href="#carousel-plan" role="button" data-slide="prev">
+          <div class="arrow arrow-left"></div>
+        </a>
+        <a class="right carousel-control" href="#carousel-plan" role="button" data-slide="next">
+          <div class="arrow arrow-right"></div>
+        </a>
+      </div>
+
+      <div class="cover-frame-footer">
+        <a href="#" class="cover-frame-footer-next-link">Атмосфера</a>
+        <a href="#" class="cover-frame-footer-side-link">Фотографии<br />сданных домов</a>
       </div>
     </div>
 

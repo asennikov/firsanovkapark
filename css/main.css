@@ -2,7 +2,7 @@
   background-image: url("../img/main-cover.jpg");
   font-style: italic;
 }
-.cover-frame-main .cover-frame-inner-container{
+.cover-frame-main .cover-frame-container{
   background: -webkit-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* Safari 5.1 to 6.0 */
   background: -o-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* For Opera 11.6 to 12.0 */
   background: -moz-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* For Firefox 3.6 to 15 */
