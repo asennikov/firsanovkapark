@@ -76,12 +76,14 @@ section:nth-of-type(6) { top: -475px; }
 .cover-frame-container h1 {
   font-weight: bold;
   font-size: 76px;
+  margin-top: 0;
   margin-bottom: 20px;
+  line-height: 1.1;
   text-shadow: 0 0 100px black;
 }
 .cover-frame-container p {
   font-size: 42px;
-  margin-bottom: 0;
+  margin: 0;
 }
 .cover-frame-container p.alone {
   padding: 40px 0;
@@ -120,6 +122,7 @@ section:nth-of-type(6) { top: -475px; }
   margin: 15px auto 0;
   width: 114px;
   height: 28px;
+  box-sizing: border-box;
   border-top: 28px solid white;
   border-left: 57px solid transparent;
   border-right: 57px solid transparent;

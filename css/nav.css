@@ -2,16 +2,22 @@
 
 .navbar {
   height: 95px;
+  width: 100%;
   border: 0;
   color: black;
-}
-.navbar .navbar-header {
-  float: none;
-  position: relative;
-  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 2;
 }
-.navbar .navbar-header .navbar-brand {
+.navbar .navbar-header{
+  background: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.navbar .navbar-brand {
   font-size: 12pt;
   font-family: 'Lighthaus', sans;
   position: relative;
@@ -19,20 +25,21 @@
   display: inline-block;
   height: 95px;
   padding: 34px 34px;
+  box-sizing: border-box;
 }
-.navbar .navbar-header .navbar-brand>img {
+.navbar .navbar-brand>img {
   height: 27px;
   display: inline-block;
 }
 
-.navbar .navbar-header .burger-button {
+.navbar .burger-button {
   position: absolute;
   left: 40px;
   top: 50%;
   margin-top: -19px;
 }
 
-.navbar .navbar-header .navbar-header-contacts {
+.navbar .navbar-contacts {
   position: absolute;
   right: 40px;
   top: 50%;
@@ -41,16 +48,16 @@
   font-size: 20px;
   line-height: 27px;
 }
-.navbar .navbar-header .navbar-header-contacts span {
+.navbar .navbar-contacts span {
   font-style: normal;
 }
-.navbar .navbar-header .navbar-header-contacts a {
+.navbar .navbar-contacts a {
   color: black;
   font-style: italic;
   text-decoration: none;
   border-bottom: 1px dashed black;
 }
-.navbar .navbar-header .navbar-header-contacts .navbar-header-contacts-phone {
+.navbar .navbar-contacts .navbar-contacts-phone {
   display: block;
 }
 
