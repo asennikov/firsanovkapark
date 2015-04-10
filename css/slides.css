@@ -49,27 +49,61 @@
   width: 40px;
   height: 75px;
   margin-top: -68px;
-  background-size: 40px 75px;
-  background-position: center;
-  background-repeat: no-repeat;
   box-sizing: content-box;
-  padding: 30px;
   border: 0;
+  padding: 30px;
 }
 .fp-controlArrow.fp-prev {
   left: 40px;
-  background-image: url('../img/svg/arrow-left.svg');
+}
+.fp-controlArrow.fp-prev::before,
+.fp-controlArrow.fp-prev::after,
+.fp-controlArrow.fp-next::before,
+.fp-controlArrow.fp-next::after {
+  content: " ";
+  background: white;
+  position: absolute;
+  top: 50%;
+  display: block;
+}
+.fp-controlArrow.fp-prev:hover::before,
+.fp-controlArrow.fp-prev:hover::after,
+.fp-controlArrow.fp-next:hover::before,
+.fp-controlArrow.fp-next:hover::after {
+  background: #d7df23;
+}
+.fp-controlArrow.fp-prev::before {
+  left: 49px;
+  margin-top: -9px;
+  height: 54px;
+  width: 2px;
+  transform: rotate(-45deg);
+}
+.fp-controlArrow.fp-prev::after {
+  left: 23px;
+  margin-top: -20px;
+  height: 2px;
+  width: 54px;
+  transform: rotate(-45deg);
 }
 .fp-controlArrow.fp-next {
   right: 40px;
-  background-image: url('../img/svg/arrow-right.svg');
 }
-.fp-controlArrow.fp-prev:hover {
-  background-image: url('../img/svg/arrow-left-hover.svg');
+.fp-controlArrow.fp-next::before {
+  right: 49px;
+  margin-top: -9px;
+  height: 54px;
+  width: 2px;
+  transform: rotate(45deg);
 }
-.fp-controlArrow.fp-next:hover {
-  background-image: url('../img/svg/arrow-right-hover.svg');
+.fp-controlArrow.fp-next::after {
+  right: 23px;
+  margin-top: -20px;
+  height: 2px;
+  width: 54px;
+  transform: rotate(45deg);
 }
+
 .slides-nav-icon {
   position: absolute;
   left: 50px;

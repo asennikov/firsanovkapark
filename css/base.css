@@ -120,9 +120,8 @@ section:nth-of-type(6) { top: -475px; }
   content: " ";
   display: block;
   margin: 15px auto 0;
-  width: 114px;
-  height: 28px;
-  box-sizing: border-box;
+  width: 0;
+  height: 0;
   border-top: 28px solid white;
   border-left: 57px solid transparent;
   border-right: 57px solid transparent;
