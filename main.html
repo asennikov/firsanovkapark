@@ -41,6 +41,30 @@
           <li><a href="#application">Оставить заявку</a></li>
         </ul>
       </div>
+
+      <div class="navbar-sliding-popup" id="gallery-popup">
+
+      </div>
+
+      <div class="navbar-sliding-popup" id="history-popup">
+        <h1>История Фирсановки</h1>
+
+        <p>
+          Преимущества бетона для изготовления мебели:
+          Бетонная мебель становится всё разнообразнее. Можно, совмещая бетон и натуральное дерево,
+          изготовить оригинальные шкафы и комоды. Словосочетание «бетонная мебель» вызывает,
+          удивление, но в наше время бетоном можно не только заливать фундаменты,
+          строить здания, но и делать практичную и модную мебель,
+          которая будет долго служить и станет дизайнерской находкой в любом интерьере.
+        </p>
+
+        <p>
+          Какую мебель можно изготовить из бетона?
+          Чаще всего бетонная мебель используется для сада. Столы, лавки, стулья отлично выглядят в тени деревьев.
+          Но бетон также можно использовать для изготовления мебели для дома, например,
+          столики (кофейные и журнальные), столы письменные, кухонные столешницы, мойки, табуретки.
+        </p>
+      </div>
     </nav>
 
     <div class="wrapper">
@@ -89,7 +113,7 @@
 
           <div class="cover-frame-footer">
             <a href="#atmosphere" class="cover-frame-footer-next-link">Атмосфера</a>
-            <a href="#" class="cover-frame-footer-side-link">Фотографии<br />сданных домов</a>
+            <a href="#" class="cover-frame-footer-side-link show-popup" data-popup-id="gallery-popup">Фотографии<br />сданных домов</a>
           </div>
         </div>
       </section>
@@ -151,7 +175,7 @@
 
           <div class="cover-frame-footer">
             <a href="#map" class="cover-frame-footer-next-link">Карта проезда</a>
-            <a href="#" class="cover-frame-footer-side-link">История<br />Фирсановки</a>
+            <a href="#" class="cover-frame-footer-side-link show-popup" data-popup-id="history-popup">История<br />Фирсановки</a>
           </div>
         </div>
       </section>
@@ -191,6 +215,7 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBOQcmDjOtCQb_FiLCZhnG0w3yOV71HuYw&sensor=FALSE"></script>
     <script src="js/main.js"></script>
   </body>

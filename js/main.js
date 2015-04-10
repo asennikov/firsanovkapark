@@ -1,13 +1,31 @@
 $(document).ready(function(){
   $('.burger-button').click(function() {
     $(this).toggleClass('active');
-    $('.navbar-sliding-menu').toggleClass('active');
+
+    if ($(this).hasClass('active')) {
+      $('.navbar-sliding-menu').addClass('active');
+    }
+    else {
+      $('.navbar-sliding-menu.active, .navbar-sliding-popup.active').removeClass('active');
+    }
 
     return false;
   });
 
   $('.navbar-sliding-menu a').click(function() {
     $('.burger-button').click();
+  });
+
+  $('.show-popup').click(function() {
+    var popupId = $(this).attr('data-popup-id');
+    var popup = $('#' + popupId);
+
+    if (popup.length === 1) {
+      popup.addClass('active');
+      $('.burger-button').addClass('active');
+    }
+
+    return false;
   });
 
   $('.wrapper').fullpage({
