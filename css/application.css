@@ -1,0 +1,8 @@
+.cover-frame-application .cover-frame-container {
+  background: none;
+}
+.cover-frame-application .cover-frame-container h1 {
+  text-shadow: none;
+  color: black;
+  font-weight: normal;
+}

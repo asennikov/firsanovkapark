@@ -8,8 +8,12 @@
 /*
  * Frames
  */
- @import 'main.css';
- @import 'plan.css';
+@import 'main.css';
+@import 'plan.css';
+@import 'atmosphere.css';
+@import 'advantages.css';
+@import 'map.css';
+@import 'application.css';
 
 /*
  * Base structure
@@ -21,6 +25,7 @@ body {
   background-color: white;
   color: white;
   font-family: 'Lora', sans;
+  font-style: italic;
 }
 body {
   text-align: center;
@@ -29,6 +34,11 @@ body {
 .wrapper {
   height: 100%;
   position: relative;
+}
+
+section {
+  height: 100%;
+  padding-top: 95px;
 }
 
 section:nth-of-type(2) { top: -95px; }
@@ -56,6 +66,25 @@ section:nth-of-type(6) { top: -475px; }
 .cover-frame-container {
   position: relative;
   z-index: 1;
+  padding: 0 120px;
+
+  background: -webkit-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* Standard syntax */
+}
+.cover-frame-container h1 {
+  font-weight: bold;
+  font-size: 76px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 100px black;
+}
+.cover-frame-container p {
+  font-size: 42px;
+  margin-bottom: 0;
+}
+.cover-frame-container p.alone {
+  padding: 40px 0;
 }
 
 .cover-frame-footer {
@@ -80,7 +109,6 @@ section:nth-of-type(6) { top: -475px; }
   color: white;
   text-decoration: none;
   font-size: 37px;
-  font-style: italic;
 }
 .cover-frame-footer-next-link:hover {
   color: #d7df23;
@@ -108,7 +136,6 @@ section:nth-of-type(6) { top: -475px; }
   color: white;
   text-decoration: none;
   font-size: 21px;
-  font-style: italic;
   text-align: right;
 }
 .cover-frame-footer-side-link:hover {

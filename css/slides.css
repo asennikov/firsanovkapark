@@ -70,12 +70,6 @@
 .fp-controlArrow.fp-next:hover {
   background-image: url('../img/svg/arrow-right-hover.svg');
 }
-.slide-sample-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-image: url('../img/cover-slide1.jpg');
-}
 .slides-nav-icon {
   position: absolute;
   left: 50px;

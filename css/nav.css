@@ -41,6 +41,9 @@
   font-size: 20px;
   line-height: 27px;
 }
+.navbar .navbar-header .navbar-header-contacts span {
+  font-style: normal;
+}
 .navbar .navbar-header .navbar-header-contacts a {
   color: black;
   font-style: italic;
