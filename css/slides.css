@@ -77,6 +77,9 @@
   margin-top: -9px;
   height: 54px;
   width: 2px;
+
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .fp-controlArrow.fp-prev::after {
@@ -84,6 +87,9 @@
   margin-top: -20px;
   height: 2px;
   width: 54px;
+
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .fp-controlArrow.fp-next {
@@ -94,6 +100,9 @@
   margin-top: -9px;
   height: 54px;
   width: 2px;
+
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .fp-controlArrow.fp-next::after {
@@ -101,6 +110,9 @@
   margin-top: -20px;
   height: 2px;
   width: 54px;
+
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
