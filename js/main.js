@@ -72,14 +72,14 @@ $(document).ready(function(){
         ]
       },{
         "featureType": "road",
-        "elementType": "labels",
+        "elementType": "labels.text",
         "stylers": [
           { "color": "#ffffff" },
           { "visibility": "simplified" },
           { "lightness": -22 }
         ]
       },{
-        "featureType": "administrative.locality",
+        "featureType": "administrative",
         "elementType": "labels.text.fill",
         "stylers": [
           { "color": "#ffffff" },
@@ -87,7 +87,7 @@ $(document).ready(function(){
           { "lightness": -22 }
         ]
       },{
-        "featureType": "administrative.locality",
+        "featureType": "administrative",
         "elementType": "labels.text.stroke",
         "stylers": [
           { "color": "#000000" },
