@@ -51,6 +51,7 @@ $(document).ready(function(){
   var options = {
       zoom: 14,
       center:  new google.maps.LatLng(55.967967, 37.280199),
+      scrollwheel: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       disableDefaultUI: true
   };
