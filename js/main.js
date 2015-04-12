@@ -36,6 +36,18 @@ $(document).ready(function(){
     paddingTop: 95
   });
 
+  // Carousel in popup
+
+  $('.slick-carousel').slick({
+    speed: 500,
+    centerMode: true,
+    centerPadding: '20%',
+    slidesToShow: 1
+  });
+
+
+  // Map related initializations
+
   var options = {
       zoom: 14,
       center:  new google.maps.LatLng(55.967967, 37.280199),
