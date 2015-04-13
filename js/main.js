@@ -28,16 +28,17 @@ $(document).ready(function(){
     return false;
   });
 
-  var cssUnfriendlyBrowser = bowser.msie || bowser.safari && !bowser.ios;
+  var cssUnfriendlyBrowser = bowser.safari && !bowser.ios;
 
   $('.wrapper').fullpage({
     anchors: ['main', 'plan', 'atmosphere', 'advantages', 'map', 'application'],
     sectionSelector: 'section',
     slideSelector: '.slide',
     slidesNavigation: true,
-    paddingTop: 95,
     css3: !cssUnfriendlyBrowser,
-    easing: 'linear'
+    easing: 'linear',
+    verticalCentered: false,
+    paddingTop: 95
   });
 
   // Carousel in popup

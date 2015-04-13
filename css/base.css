@@ -48,33 +48,37 @@ section:nth-of-type(4) { top: -285px; }
 section:nth-of-type(5) { top: -380px; }
 section:nth-of-type(6) { top: -475px; }
 
-.cover-frame {
-  position: relative;
+.cover-frame-wrapper {
+  position: absolute;
   width: 100%;
-  height: 100%;
-  min-height: 100%;
+  top: 95px;
+  bottom: 0;
   background-size: cover;
-
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column; /* works with row or column */
-  flex-direction: column;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  z-index: 3;
 }
 .cover-frame-container {
   position: relative;
-  z-index: 1;
-  padding: 0 120px;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
 
+.cover-frame-content {
+  position: relative;
+  z-index: 5;
+  padding: 0 120px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cover-frame-content-shadow {
   background: -webkit-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* Safari 5.1 to 6.0 */
   background: -o-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* For Opera 11.6 to 12.0 */
   background: -moz-radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* For Firefox 3.6 to 15 */
   background: radial-gradient(rgba(0,0,0,0.7) 30%, transparent 70%); /* Standard syntax */
 }
-.cover-frame-container h1 {
+
+.cover-frame-content h1 {
   font-weight: bold;
   font-size: 76px;
   margin-top: 0;
@@ -82,11 +86,11 @@ section:nth-of-type(6) { top: -475px; }
   line-height: 1.1;
   text-shadow: 0 0 100px black;
 }
-.cover-frame-container p {
+.cover-frame-content p {
   font-size: 42px;
   margin: 0;
 }
-.cover-frame-container p.alone {
+.cover-frame-content p.alone {
   padding: 40px 0;
 }
 
@@ -97,7 +101,7 @@ section:nth-of-type(6) { top: -475px; }
   left: 0;
   height: 230px;
   width: 100%;
-  z-index: 13;
+  z-index: 4;
 
   background: -webkit-linear-gradient(transparent 0%, black 160%); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(transparent 0%, black 160%); /* For Opera 11.1 to 12.0 */
