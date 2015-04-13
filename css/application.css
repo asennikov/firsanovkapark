@@ -1,7 +1,7 @@
-.cover-frame-application .cover-frame-container {
+.cover-frame-application .cover-frame-content-shadow {
   background: none;
 }
-.cover-frame-application .cover-frame-container h1 {
+.cover-frame-application .cover-frame-content h1 {
   text-shadow: none;
   color: black;
   font-weight: normal;

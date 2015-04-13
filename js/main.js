@@ -35,9 +35,10 @@ $(document).ready(function(){
     sectionSelector: 'section',
     slideSelector: '.slide',
     slidesNavigation: true,
-    paddingTop: 95,
     css3: !cssUnfriendlyBrowser,
-    easing: 'linear'
+    easing: 'linear',
+    verticalCentered: false,
+    paddingTop: 95
   });
 
   // Carousel in popup
