@@ -54,7 +54,7 @@ section:nth-of-type(6) { top: -475px; }
   top: 95px;
   bottom: 0;
   background-size: cover;
-  z-index: 10;
+  z-index: 3;
 }
 .cover-frame-container {
   position: relative;
@@ -65,7 +65,7 @@ section:nth-of-type(6) { top: -475px; }
 
 .cover-frame-content {
   position: relative;
-  z-index: 1;
+  z-index: 5;
   padding: 0 120px;
   display: table-cell;
   vertical-align: middle;
@@ -101,7 +101,7 @@ section:nth-of-type(6) { top: -475px; }
   left: 0;
   height: 230px;
   width: 100%;
-  z-index: 13;
+  z-index: 4;
 
   background: -webkit-linear-gradient(transparent 0%, black 160%); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(transparent 0%, black 160%); /* For Opera 11.1 to 12.0 */
