@@ -23,6 +23,11 @@ $(document).ready(function(){
     if (popup.length === 1) {
       popup.addClass('active');
       $('.burger-button').addClass('active');
+
+      if (popupId === 'application-popup') {
+        $('.application-success').hide();
+        $('.application-form').show();
+      }
     }
 
     return false;
