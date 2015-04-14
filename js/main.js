@@ -66,6 +66,14 @@ $(document).ready(function(){
   $('.application-form').submit(function() {
     // send request to the server
 
+    var onSuccess = function() {
+      $('.application-form').fadeOut(300, function() {
+        $('.application-success').fadeIn(300);
+      })
+    };
+
+    onSuccess();
+
     return false;
   });
 
