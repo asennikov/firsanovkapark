@@ -152,3 +152,63 @@
   font-style: normal;
   font-size: 28px;
 }
+
+.application-form-input {
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.application-form-editable,
+.application-form-input-dummy {
+  color: black;
+  font-family: 'Lora';
+  font-style: italic;
+  font-size: 76px;
+  display: inline-block;
+  border: 0;
+  outline: none;
+  text-align: center;
+}
+.application-form-editable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+}
+.application-form-editable::-webkit-input-placeholder { color: black; }
+.application-form-editable:-moz-placeholder { color: black; }
+.application-form-editable::-moz-placeholder { color: black; }
+.application-form-editable:-ms-input-placeholder { color: black; }
+.application-form-editable:focus::-webkit-input-placeholder { color: gray; }
+.application-form-editable:focus:-moz-placeholder { color: gray; }
+.application-form-editable:focus::-moz-placeholder { color: gray; }
+.application-form-editable:focus:-ms-input-placeholder { color: gray; }
+
+.application-form-input-dummy {
+  color: white;
+  position: relative;
+  display: inline-block;
+  border-bottom: 3px dashed black;
+  line-height: 88px;
+}
+.application-form button {
+  background: black;
+  border-radius: 38px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Lora';
+  font-size: 37px;
+  height: 80px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-top: 50px;
+}
+
+.application-form button:hover {
+  opacity: 0.7;
+}

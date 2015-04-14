@@ -50,6 +50,25 @@ $(document).ready(function(){
     slidesToShow: 1
   });
 
+  // Application form logic
+
+  $('.application-form-editable').bind('change keyup', function() {
+    var dummy = $(this).parent().find('.application-form-input-dummy');
+
+    if ($(this).val().trim().length === 0) {
+      dummy.text($(this).attr('placeholder'));
+    }
+    else {
+      dummy.text($(this).val());
+    }
+  });
+
+  $('.application-form').submit(function() {
+    // send request to the server
+
+    return false;
+  });
+
 
   // Map related initializations
 
