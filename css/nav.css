@@ -145,11 +145,13 @@
   padding: 0 160px;
   font-weight: normal;
   font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .navbar-sliding-popup p {
   padding: 0 160px;
   font-style: normal;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .application-form-input {
