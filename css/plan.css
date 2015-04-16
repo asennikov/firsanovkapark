@@ -34,7 +34,7 @@
   left: 50%;
   top: 50%;
   opacity: 0;
-  transition: all 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 .cover-frame-plan-slide img:hover {
   opacity: 1;
