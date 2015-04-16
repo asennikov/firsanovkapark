@@ -21,9 +21,6 @@
 .cover-frame-advantages .cover-frame-footer-side-link:hover::after {
   background: url('../img/svg/info-hover.svg');
 }
-.cover-frame-advantages .slide-sample-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-image: url('../img/cover-slide3.jpg');
+.cover-frame-advantages .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide1.jpg');
 }

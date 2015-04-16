@@ -36,7 +36,7 @@ $(document).ready(function(){
   // Calculate hovers for buildings positions on 'plan' frame
 
   var recalcHoverPositions = function() {
-    $('.cover-frame-plan-slide').each(function() {
+    $('.cover-frame-plan .cover-frame-slide').each(function() {
       var frame = $(this);
       var fullImageWidth = frame.attr('data-full-width');
       var fullImageHeight = frame.attr('data-full-height');

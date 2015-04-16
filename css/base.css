@@ -100,6 +100,16 @@ section:nth-of-type(6) { top: -475px; }
   padding: 40px 0;
 }
 
+.cover-frame-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
 .cover-frame-footer {
   display: block;
   position: absolute;
