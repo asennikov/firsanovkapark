@@ -36,42 +36,44 @@ $(document).ready(function(){
   // Calculate hovers for buildings positions on 'plan' frame
 
   var recalcHoverPositions = function() {
-    var fullImageWidth = 3000;
-    var fullImageHeight = 1680;
-    var frame = $('.cover-frame-plan-slide:first');
-    var frameWidth = frame.width();
-    var frameHeight = frame.height();
-    var sizedImageWidth;
-    var sizedImageHeight;
+    $('.cover-frame-plan-slide').each(function() {
+      var frame = $(this);
+      var fullImageWidth = frame.attr('data-full-width');
+      var fullImageHeight = frame.attr('data-full-height');
+      var frameWidth = frame.width();
+      var frameHeight = frame.height();
+      var sizedImageWidth;
+      var sizedImageHeight;
 
-    var fullImageApectRatio = fullImageWidth / fullImageHeight;
-    var frameApectRatio = frameWidth / frameHeight;
+      var fullImageApectRatio = fullImageWidth / fullImageHeight;
+      var frameApectRatio = frameWidth / frameHeight;
 
-    if (fullImageApectRatio > frameApectRatio) {
-      sizedImageHeight = frameHeight;
-      sizedImageWidth = sizedImageHeight * fullImageApectRatio;
-    }
-    else {
-      sizedImageWidth = frameWidth;
-      sizedImageHeight = sizedImageWidth / fullImageApectRatio;
-    }
+      if (fullImageApectRatio > frameApectRatio) {
+        sizedImageHeight = frameHeight;
+        sizedImageWidth = sizedImageHeight * fullImageApectRatio;
+      }
+      else {
+        sizedImageWidth = frameWidth;
+        sizedImageHeight = sizedImageWidth / fullImageApectRatio;
+      }
 
-    var scale = sizedImageWidth / fullImageWidth;
+      var scale = sizedImageWidth / fullImageWidth;
 
-    $('.cover-frame-plan-slide img').each(function() {
-      var offsetX = $(this).attr('data-offset-x');
-      var offsetY = $(this).attr('data-offset-y');
-      var width = $(this).attr('data-width');
-      var height = $(this).attr('data-height');
+      frame.find('img').each(function() {
+        var offsetX = $(this).attr('data-offset-x');
+        var offsetY = $(this).attr('data-offset-y');
+        var width = $(this).attr('data-width');
+        var height = $(this).attr('data-height');
 
-      var offsetFromCenterX = - (fullImageWidth / 2 - offsetX);
-      var offsetFromCenterY = - (fullImageHeight / 2 - offsetY);
+        var offsetFromCenterX = - (fullImageWidth / 2 - offsetX);
+        var offsetFromCenterY = - (fullImageHeight / 2 - offsetY);
 
-      $(this).css({
-        'margin-left': (offsetFromCenterX * scale) + 'px',
-        'margin-top': (offsetFromCenterY * scale)  + 'px',
-        'width': (width * scale) + 'px',
-        'height': (height * scale) + 'px'
+        $(this).css({
+          'margin-left': (offsetFromCenterX * scale) + 'px',
+          'margin-top': (offsetFromCenterY * scale)  + 'px',
+          'width': (width * scale) + 'px',
+          'height': (height * scale) + 'px'
+        });
       });
     });
   };

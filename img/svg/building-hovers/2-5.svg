@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 85.308 78.797" style="enable-background:new 0 0 85.308 78.797;" xml:space="preserve">
+<defs>
+	<pattern xmlns="http://www.w3.org/2000/svg" id="linesPattern" patternUnits="userSpaceOnUse" width="4" height="4">
+    <rect width="4" height="4" fill="#bbdb4a" style="opacity:0.4;height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:0px 0px;-webkit-perspective-origin:0px 0px;transform-origin:0px 0px;-webkit-transform-origin:0px 0px;fill:#bbdb4a;"/>
+    <path d="M 0,4 l 4,-4 M -1,1 l 2,-2 M 3,5 l 2,-2" stroke-width="1" shape-rendering="auto" stroke="#ffffff" stroke-linecap="square" style="opacity:0.7;height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:0px 0px;-webkit-perspective-origin:0px 0px;transform-origin:0px 0px;-webkit-transform-origin:0px 0px;stroke:#ffffff;stroke-linecap:square;stroke-width:1px;"/>
+  </pattern>
+</defs>
+<g>
+	<path style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#linesPattern);stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" d="
+		M16.743,60.264l9.12,6.24l6.72-2.64l19.44,12.72l15.12-5.28l-0.48-20.64l16.56-7.44l-0.96-14.88l-2.88-1.68v-3.6l-34.8-17.76
+		l-2.64,1.44l-8.16-4.56l-31.68,11.04l2.4,34.08l13.2,9.6L16.743,60.264z"/>
+</g>
+</svg>
