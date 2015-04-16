@@ -35,6 +35,8 @@ $(document).ready(function(){
 
   var cssUnfriendlyBrowser = bowser.safari && !bowser.ios;
 
+  var timeout;
+
   $('.wrapper').fullpage({
     anchors: ['main', 'plan', 'atmosphere', 'advantages', 'map', 'application'],
     sectionSelector: 'section',
@@ -43,7 +45,32 @@ $(document).ready(function(){
     css3: !cssUnfriendlyBrowser,
     easing: 'linear',
     verticalCentered: false,
-    paddingTop: 95
+    paddingTop: 95,
+
+    afterLoad: function(anchorLink, index){
+      var loadedSection = $(this);
+      var hidingContent = loadedSection.find('.cover-frame-wrapper');
+
+      //using anchorLink
+      if(anchorLink == 'plan'){
+        clearTimeout(timeout);
+        hidingContent.show();
+
+        timeout = setTimeout(function() {
+          hidingContent.fadeOut(300);
+        }, 2000);
+      }
+    },
+    onLeave: function(index, nextIndex, direction){
+      var loadedSection = $(this);
+      var hidingContent = loadedSection.find('.cover-frame-wrapper');
+
+      //after leaving section 2
+      if(index == 2){
+        clearTimeout(timeout);
+        hidingContent.fadeIn(300);
+      }
+    }
   });
 
   // Carousel in popup
