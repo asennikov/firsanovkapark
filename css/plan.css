@@ -42,11 +42,6 @@
 .cover-frame-plan-slide-first {
   background-image: url('../img/cover-slide5.jpg');
 }
-.cover-frame-plan-slide-first img.building1 {
-  width: 338px;
-  margin-left: -633px;
-  margin-top: -177px;
-}
 .cover-frame-plan-slide-second {
   background-image: url('../img/cover-slide6.jpg');
 }

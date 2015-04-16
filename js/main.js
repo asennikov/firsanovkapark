@@ -33,8 +33,50 @@ $(document).ready(function(){
     return false;
   });
 
-  var cssUnfriendlyBrowser = bowser.safari && !bowser.ios;
+  // Calculate hovers for buildings positions on 'plan' frame
 
+  var recalcHoverPositions = function() {
+    var fullImageWidth = 3000;
+    var fullImageHeight = 1680;
+    var frame = $('.cover-frame-plan-slide:first');
+    var frameWidth = frame.width();
+    var frameHeight = frame.height();
+    var sizedImageWidth;
+    var sizedImageHeight;
+
+    var fullImageApectRatio = fullImageWidth / fullImageHeight;
+    var frameApectRatio = frameWidth / frameHeight;
+
+    if (fullImageApectRatio > frameApectRatio) {
+      sizedImageHeight = frameHeight;
+      sizedImageWidth = sizedImageHeight * fullImageApectRatio;
+    }
+    else {
+      sizedImageWidth = frameWidth;
+      sizedImageHeight = sizedImageWidth / fullImageApectRatio;
+    }
+
+    var scale = sizedImageWidth / fullImageWidth;
+
+    $('.cover-frame-plan-slide img').each(function() {
+      var offsetX = $(this).attr('data-offset-x');
+      var offsetY = $(this).attr('data-offset-y');
+      var width = $(this).attr('data-width');
+      var height = $(this).attr('data-height');
+
+      var offsetFromCenterX = - (fullImageWidth / 2 - offsetX);
+      var offsetFromCenterY = - (fullImageHeight / 2 - offsetY);
+
+      $(this).css({
+        'margin-left': (offsetFromCenterX * scale) + 'px',
+        'margin-top': (offsetFromCenterY * scale)  + 'px',
+        'width': (width * scale) + 'px',
+        'height': (height * scale) + 'px'
+      });
+    });
+  };
+
+  var cssUnfriendlyBrowser = bowser.safari && !bowser.ios;
   var timeout;
 
   $('.wrapper').fullpage({
@@ -70,7 +112,9 @@ $(document).ready(function(){
         clearTimeout(timeout);
         hidingContent.fadeIn(300);
       }
-    }
+    },
+    afterResize: recalcHoverPositions,
+    afterRender: recalcHoverPositions
   });
 
   // Carousel in popup
@@ -101,14 +145,13 @@ $(document).ready(function(){
     var onSuccess = function() {
       $('.application-form').fadeOut(300, function() {
         $('.application-success').fadeIn(300);
-      })
+      });
     };
 
     onSuccess();
 
     return false;
   });
-
 
   // Map related initializations
 
