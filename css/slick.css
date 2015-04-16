@@ -7,6 +7,9 @@
   height: 600px;
   background: url('../img/main-cover.jpg') center no-repeat;
   background-size: contain;
+
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
   transform: scale(0.7);
   transition: all 300ms ease-in-out;
   opacity: 0.5;
@@ -21,6 +24,8 @@
 
 }
 .slick-carousel .slick-slide.slick-center .carousel-content {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
