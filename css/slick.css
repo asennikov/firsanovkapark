@@ -20,9 +20,6 @@
 .slick-carousel .slick-next {
   right: 15%;
 }
-.slick-carousel .slick-slide.slick-center {
-
-}
 .slick-carousel .slick-slide.slick-center .carousel-content {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
