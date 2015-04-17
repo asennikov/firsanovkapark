@@ -1,7 +1,7 @@
 .fp-slidesNav.bottom {
-  left: 131px;
+  left: 50px;
   bottom: 30px;
-  margin-left: -42px !important;
+  margin-left: 0 !important;
 }
 .fp-slidesNav.bottom ul li {
   width: 26px;
