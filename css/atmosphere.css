@@ -1,3 +1,10 @@
+.cover-frame-atmosphere .cover-frame-content-shadow {
+  background: -webkit-radial-gradient(rgba(0,0,0,0.4) 30%, transparent 70%); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(rgba(0,0,0,0.4) 30%, transparent 70%); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(rgba(0,0,0,0.4) 30%, transparent 70%); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(rgba(0,0,0,0.4) 30%, transparent 70%); /* Standard syntax */
+}
+
 .cover-frame-atmosphere .slide:nth-of-type(1) .cover-frame-slide {
   background-image: url('../img/atmosphere/cover-slide1.jpg');
 }
