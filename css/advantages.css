@@ -21,6 +21,33 @@
 .cover-frame-advantages .cover-frame-footer-side-link:hover::after {
   background: url('../img/svg/info-hover.svg');
 }
-.cover-frame-advantages .cover-frame-slide {
+.cover-frame-advantages .slide:nth-of-type(1) .cover-frame-slide {
   background-image: url('../img/advantages/cover-slide1.jpg');
+}
+.cover-frame-advantages .slide:nth-of-type(2) .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide2.jpg');
+}
+.cover-frame-advantages .slide:nth-of-type(3) .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide3.jpg');
+}
+.cover-frame-advantages .slide:nth-of-type(4) .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide4.jpg');
+}
+
+/*.cover-frame-advantages .slide:nth-of-type(5) .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide5.jpg');
+}
+.cover-frame-advantages .slide:nth-of-type(6) .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide6.jpg');
+}
+.cover-frame-advantages .slide:nth-of-type(7) .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide7.jpg');
+}*/
+
+/* Replace with above after 5th image will be ready */
+.cover-frame-advantages .slide:nth-of-type(5) .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide6.jpg');
+}
+.cover-frame-advantages .slide:nth-of-type(6) .cover-frame-slide {
+  background-image: url('../img/advantages/cover-slide7.jpg');
 }
