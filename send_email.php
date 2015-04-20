@@ -17,6 +17,10 @@
           array(
             'email' => 'gseno88@gmail.com',
             'type' => 'to'
+          ),
+          array(
+            'email' => 'i.lyskina@deluxe-interactive.com',
+            'type' => 'to'
           )
         )
       );
