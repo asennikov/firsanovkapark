@@ -12,17 +12,27 @@ $(document).ready(function(){
   });
 
   $('.application-form').submit(function() {
-    // send request to the server
+    var url = window.location.origin;
+    var name = $('.application-form input:first').val();
+    var phone = $('.application-form input:last').val();
+    var data = {
+      send_email: true,
+      name: name,
+      phone: phone
+    };
 
     var onSuccess = function() {
       $('.application-form').fadeOut(300, function() {
-        $('.application-success').fadeIn(300);
+        $('.application-success').text('Данные получены, ожидайте звонка!').fadeIn(300);
       });
     };
+    var onFail = function() {
+      $('.application-success').text('Заявка не отправлена, перезагрузите страницу и попробуйте ещё раз!').fadeIn(300);
+    };
 
-    onSuccess();
+    $.post(url, data).done(onSuccess).fail(onFail);
 
     return false;
   });
-  
+
 });
