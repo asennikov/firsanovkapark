@@ -1,37 +1,4 @@
 $(document).ready(function(){
-  $('.burger-button').click(function() {
-    $(this).toggleClass('active');
-
-    if ($(this).hasClass('active')) {
-      $('#menu-popup').addClass('active');
-    }
-    else {
-      $('.sliding-popup.active').removeClass('active');
-    }
-
-    return false;
-  });
-
-  $('#menu-popup a').click(function() {
-    $('.burger-button').click();
-  });
-
-  $('.show-popup').click(function() {
-    var popupId = $(this).attr('data-popup-id');
-    var popup = $('#' + popupId);
-
-    if (popup.length === 1) {
-      popup.addClass('active');
-      $('.burger-button').addClass('active');
-
-      if (popupId === 'application-popup') {
-        $('.application-success').hide();
-        $('.application-form').show();
-      }
-    }
-
-    return false;
-  });
 
   // Calculate hovers for buildings positions on 'plan' frame
 
@@ -78,8 +45,11 @@ $(document).ready(function(){
     });
   };
 
+  // For some reason css3 transitions produce glitches in desktop Safari
   var cssUnfriendlyBrowser = bowser.safari && !bowser.ios;
   var timeout;
+
+  // Init Fullpage.js plugin
 
   $('.wrapper').fullpage({
     anchors: ['main', 'plan', 'atmosphere', 'advantages', 'map', 'application'],
@@ -95,7 +65,6 @@ $(document).ready(function(){
       var loadedSection = $(this);
       var hidingContent = loadedSection.find('.cover-frame-wrapper');
 
-      //using anchorLink
       if(anchorLink == 'plan'){
         clearTimeout(timeout);
         hidingContent.show();
@@ -109,7 +78,6 @@ $(document).ready(function(){
       var loadedSection = $(this);
       var hidingContent = loadedSection.find('.cover-frame-wrapper');
 
-      //after leaving section 2
       if(index == 2){
         clearTimeout(timeout);
         hidingContent.fadeIn(300);
@@ -119,143 +87,13 @@ $(document).ready(function(){
     afterRender: recalcHoverPositions
   });
 
-  // Carousel in popup
+  // Init Slick.js carousel in popup
 
   $('.slick-carousel').slick({
     speed: 500,
     centerMode: true,
     centerPadding: '20%',
     slidesToShow: 1
-  });
-
-  // Floor plans in popup
-
-  $('.floor-plan-selector li a').click(function() {
-    var selectorItem = $(this).parent();
-    var selectorItemIndex = selectorItem.index('.floor-plan-selector li');
-    var selectedContent = $('.floor-plan-content:eq(' + selectorItemIndex + ')');
-
-    if (!selectorItem.hasClass('active')) {
-      $('.floor-plan-selector li.active').removeClass('active');
-      $('.floor-plan-content.active').removeClass('active');
-
-      selectorItem.addClass('active');
-      selectedContent.addClass('active');
-    }
-
-    return false;
-  });
-
-  // Application form logic
-
-  $('.application-form-editable').bind('change keyup', function() {
-    var dummy = $(this).parent().find('.application-form-input-dummy');
-
-    if ($(this).val().trim().length === 0) {
-      dummy.text($(this).attr('placeholder'));
-    }
-    else {
-      dummy.text($(this).val());
-    }
-  });
-
-  $('.application-form').submit(function() {
-    // send request to the server
-
-    var onSuccess = function() {
-      $('.application-form').fadeOut(300, function() {
-        $('.application-success').fadeIn(300);
-      });
-    };
-
-    onSuccess();
-
-    return false;
-  });
-
-  // Map related initializations
-
-  var options = {
-      zoom: 14,
-      center:  new google.maps.LatLng(55.967967, 37.280199),
-      scrollwheel: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      disableDefaultUI: true
-  };
-
-  map = new google.maps.Map($('.cover-frame-map-container')[0], options);
-  map.setOptions({
-    styles: [
-      {
-        "featureType": "landscape.natural",
-        "elementType": "geometry.fill",
-        "stylers": [
-          { "color": "#66814D" }
-        ]
-      },{
-        "featureType": "landscape.man_made",
-        "elementType": "geometry.fill",
-        "stylers": [
-          { "color": "#566447" }
-        ]
-      },{
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-          { "color": "#000000" }
-        ]
-      },{
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-          { "color": "#3E3A27" }
-        ]
-      },{
-        "featureType": "road",
-        "elementType": "labels.text",
-        "stylers": [
-          { "color": "#ffffff" },
-          { "visibility": "simplified" },
-          { "lightness": -22 }
-        ]
-      },{
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
-          { "color": "#ffffff" },
-          { "visibility": "on" },
-          { "lightness": -22 }
-        ]
-      },{
-        "featureType": "administrative",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-          { "color": "#000000" },
-          { "lightness": 23 }
-        ]
-      },{
-        "featureType": "poi",
-        "elementType": "labels.text.fill",
-        "stylers": [
-          { "color": "#ffffff" },
-          { "lightness": -22 }
-        ]
-      },{
-        "featureType": "poi",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-          { "color": "#000000" },
-          { "lightness": 23 }
-        ]
-      },{
-        "featureType": "road.highway",
-        "elementType": "labels.text.fill",
-        "stylers": [
-          { "color": "#000000" },
-          { "lightness": 23 }
-        ]
-      }
-    ]
   });
 
 });
