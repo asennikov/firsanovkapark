@@ -51,11 +51,8 @@
 .navbar .navbar-contacts span {
   font-style: normal;
 }
-.navbar .navbar-contacts a {
-  color: black;
+.navbar .navbar-contacts a.link {
   font-style: italic;
-  text-decoration: none;
-  border-bottom: 1px dashed black;
 }
 .navbar .navbar-contacts .navbar-contacts-phone {
   display: block;
@@ -257,24 +254,6 @@
   display: inline-block;
   border-bottom: 3px dashed black;
   line-height: 88px;
-}
-.application-form button {
-  background: black;
-  border-radius: 38px;
-  border: 0;
-  color: white;
-  cursor: pointer;
-  outline: none;
-  font-family: 'Lora';
-  font-size: 37px;
-  height: 80px;
-  padding-left: 55px;
-  padding-right: 55px;
-  margin-top: 50px;
-}
-
-.application-form button:hover {
-  opacity: 0.7;
 }
 
 .application-success {

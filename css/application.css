@@ -9,12 +9,11 @@
   font-weight: normal;
 }
 .cover-frame-application .cover-frame-content h1 a {
-  text-decoration: none;
-  color: black;
-  border-bottom: 3px dashed black;
   display: inline-block;
-  line-height: 80px;
   margin: 20px auto;
+}
+.cover-frame-application .cover-frame-content h1 a:after {
+  border-bottom-width: 3px;
 }
 .cover-frame-application .cover-frame-content p {
   font-style: normal;
