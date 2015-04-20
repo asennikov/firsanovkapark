@@ -26,6 +26,8 @@
   left: 50%;
   top: 50%;
   opacity: 0;
+
+  -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
 .cover-frame-plan .cover-frame-slide img:hover {

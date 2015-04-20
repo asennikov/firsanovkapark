@@ -19,7 +19,6 @@ a.link::after {
   transform: translateY(-50%);
 
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
 }
 a.link:hover::after {

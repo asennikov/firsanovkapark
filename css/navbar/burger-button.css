@@ -23,6 +23,7 @@
 .burger-button span,
 .burger-button span:before,
 .burger-button span::after {
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .burger-button.active span {
