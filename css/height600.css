@@ -1,0 +1,23 @@
+/* Temp file, hot fix for 1280x600 screens */
+@media only screen and (max-height: 610px) {
+  .cover-frame-content h1,
+  .application-form-editable,
+  .application-form-input-dummy {
+    font-size: 50px;
+  }
+  .cover-frame-content p {
+    font-size: 30px;
+  }
+  .application-form-input {
+    margin-bottom: 25px;
+  }
+  .application-form-input-dummy {
+    line-height: 56px;
+  }
+  .application-form button {
+    margin-top: 25px;
+  }
+  .navbar-sliding-menu ul li a {
+    font-size: 50px;
+  }
+}
