@@ -22,8 +22,5 @@
     "fullpage.js": "~2.6.3",
     "slick.js": "~1.5.0",
     "bowser": "~0.7.2"
-  },
-  "resolutions": {
-    "jquery": "1.x"
   }
 }

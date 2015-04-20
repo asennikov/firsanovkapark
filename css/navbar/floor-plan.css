@@ -7,19 +7,29 @@
 }
 .floor-plan-content {
   position: absolute;
-  width: 100%;
+  width: 708px;
   height: 100%;
-  left: 0;
+  left: 50%;
+  margin-left: -354px;
   top: 0;
   background: url('../../img/floor-plans/1.jpg') center no-repeat;
   background-size: contain;
-
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  opacity: 0;
 }
-.floor-plan-content.active {
-  opacity: 1;
+
+.floor-plan-content .flat {
+  stroke-width: 0;
+  clip-rule: evenodd;
+  fill: white;
+  stroke: black;
+  stroke-miterlimit: 10;
+  opacity: 0;
+  outline: none;
+}
+.floor-plan-content .flat:hover {
+  opacity: 0.2;
+}
+.floor-plan-content .flat:not(.booked):hover {
+  cursor: pointer;
 }
 
 .floor-plan-selector {
