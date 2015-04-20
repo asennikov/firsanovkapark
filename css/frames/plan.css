@@ -15,11 +15,11 @@
   display: block;
   width: 62px;
   height: 48px;
-  background: url('../img/svg/photos.svg');
+  background: url('../../img/svg/photos.svg');
   background-size: 62px 48px;
 }
 .cover-frame-plan .cover-frame-footer-side-link:hover::after {
-  background: url('../img/svg/photos-hover.svg');
+  background: url('../../img/svg/photos-hover.svg');
 }
 .cover-frame-plan .cover-frame-slide img {
   position: absolute;
@@ -32,8 +32,8 @@
   opacity: 1;
 }
 .cover-frame-plan .slide:nth-of-type(1) .cover-frame-slide {
-  background-image: url('../img/plan/cover-slide1.jpg');
+  background-image: url('../../img/plan/cover-slide1.jpg');
 }
 .cover-frame-plan .slide:nth-of-type(2) .cover-frame-slide {
-  background-image: url('../img/plan/cover-slide2.jpg');
+  background-image: url('../../img/plan/cover-slide2.jpg');
 }

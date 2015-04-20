@@ -5,7 +5,7 @@
 }
 .carousel-content {
   height: 600px;
-  background: url('../img/main-cover.jpg') center no-repeat;
+  background: url('../../img/main-cover.jpg') center no-repeat;
   background-size: contain;
 
   -webkit-transform: scale(0.7);

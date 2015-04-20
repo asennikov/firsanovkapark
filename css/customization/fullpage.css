@@ -109,11 +109,3 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-.slides-nav-icon {
-  position: absolute;
-  left: 50px;
-  bottom: 36px;
-  width: 163px;
-  z-index: 4;
-}

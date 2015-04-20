@@ -1,27 +1,31 @@
 /*
- * Utilities
- */
-@import 'fonts.css';
-@import 'nav.css';
-@import 'slides.css';
-@import 'slick.css';
-@import 'links.css';
-@import 'buttons.css';
-
-/*
  * Base structure
  */
 @import 'base.css';
 
 /*
+ * Utilities
+ */
+@import 'fonts.css';
+@import 'navbar.css';
+@import 'links.css';
+@import 'buttons.css';
+
+/*
+ * Customization of external libs
+ */
+@import 'customization/fullpage.css';
+@import 'customization/slick.css';
+
+/*
  * Frames
  */
-@import 'main.css';
-@import 'plan.css';
-@import 'atmosphere.css';
-@import 'advantages.css';
-@import 'map.css';
-@import 'application.css';
+@import 'frames/main.css';
+@import 'frames/plan.css';
+@import 'frames/atmosphere.css';
+@import 'frames/advantages.css';
+@import 'frames/map.css';
+@import 'frames/application.css';
 
 /*
  * Media queries
