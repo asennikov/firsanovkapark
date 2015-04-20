@@ -28,7 +28,7 @@
   z-index: -1;
   background: black;
 }
-.button:after {
+.button::after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -43,11 +43,11 @@
   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
-.button:hover:after {
+.button:hover::after {
   height: 320%;
   opacity: 1;
 }
-.button, .button:after {
+.button, .button::after {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;

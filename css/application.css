@@ -12,7 +12,7 @@
   display: inline-block;
   margin: 20px auto;
 }
-.cover-frame-application .cover-frame-content h1 a:after {
+.cover-frame-application .cover-frame-content h1 a::after {
   border-bottom-width: 3px;
 }
 .cover-frame-application .cover-frame-content p {
