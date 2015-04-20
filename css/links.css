@@ -22,7 +22,7 @@ a.link::after {
   -moz-transition: opacity 0.3s, -moz-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
 }
-a.link:hover::after, a.link:focus::after {
+a.link:hover::after {
   opacity: 0;
 
   -webkit-transform: translateY(300%);

@@ -3,16 +3,16 @@ $(document).ready(function(){
     $(this).toggleClass('active');
 
     if ($(this).hasClass('active')) {
-      $('.navbar-sliding-menu').addClass('active');
+      $('#menu-popup').addClass('active');
     }
     else {
-      $('.navbar-sliding-menu.active, .navbar-sliding-popup.active').removeClass('active');
+      $('.sliding-popup.active').removeClass('active');
     }
 
     return false;
   });
 
-  $('.navbar-sliding-menu a').click(function() {
+  $('#menu-popup a').click(function() {
     $('.burger-button').click();
   });
 
