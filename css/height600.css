@@ -17,7 +17,12 @@
   .application-form button {
     margin-top: 25px;
   }
-  .navbar-sliding-menu ul li a {
-    font-size: 50px;
+  .navbar-sliding-menu ul,
+  .navbar-sliding-popup ul {
+    padding: 20px 0;
+  }
+  .navbar-sliding-menu ul li a,
+  .navbar-sliding-popup ul li a {
+    font-size: 30px;
   }
 }
