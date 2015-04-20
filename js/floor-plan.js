@@ -12,6 +12,10 @@ $(document).ready(function(){
     intentSensitivity: 100
   });
 
+  $('.flat:not(.booked)').click(function() {
+    $('.navbar .navbar-contacts .show-popup.link').click();
+  });
+
   $('.floor-plan-selector li a').click(function() {
     var selectorItem = $(this).parent();
     var selectorItemIndex = selectorItem.index('.floor-plan-selector li');

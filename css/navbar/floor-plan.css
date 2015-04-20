@@ -1,19 +1,17 @@
 .floor-plan {
   width: 100%;
 }
-.floor-plan-container {
+.floor-plan-content {
   position: relative;
   height: 450px;
 }
-.floor-plan-content {
+.floor-plan-content svg{
   position: absolute;
   width: 708px;
   height: 100%;
   left: 50%;
   margin-left: -354px;
   top: 0;
-  background: url('../../img/floor-plans/1.jpg') center no-repeat;
-  background-size: contain;
 }
 
 .floor-plan-content .flat {
