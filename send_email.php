@@ -20,9 +20,10 @@
           )
         )
       );
-      $result = $mandrill->messages->send($message);
+      $async = true;
+      $result = $mandrill->messages->send($message, $async);
       echo(json_encode($result));
-      
+
     } catch(Mandrill_Error $e) {
       // Mandrill errors are thrown as exceptions
       echo 'A mandrill error occurred: ' . get_class($e) . ' - ' . $e->getMessage();
