@@ -87,6 +87,13 @@
   width: 100%;
   left: 0;
 }
+.sliding-popup-menu li a.disabled {
+  color: gray;
+  cursor: default;
+}
+.sliding-popup-menu li a.disabled:hover::after {
+  width: 0;
+}
 
 .sliding-popup h1 {
   max-width: 1024px;
