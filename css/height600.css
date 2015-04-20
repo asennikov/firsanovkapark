@@ -25,4 +25,7 @@
   .navbar-sliding-popup ul li a {
     font-size: 30px;
   }
+  .floor-plan-container {
+    height: 300px;
+  }
 }
