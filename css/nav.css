@@ -117,15 +117,29 @@
 .navbar-sliding-menu.active ul li a {
   color: black;
 }
-.navbar-sliding-menu ul li a:hover::after {
+.navbar-sliding-menu ul li a::after {
   content: " ";
   position: absolute;
+  z-index: -1;
   top: 50%;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: 0;
   height: 4px;
   background: url('../img/menu-hover-bg.png') center;
-  z-index: -1;
+
+  /* TODO: try to replace background above with dashed border.
+
+    border-bottom: 3px dashed gray;
+    opacity: 0.7;
+  */
+
+  -webkit-transition: all 0.3s ease 0.1s;
+  -moz-transition: all 0.3s ease 0.1s;
+  transition: all 0.3s ease 0.1s;
+}
+.navbar-sliding-menu ul li a:hover::after {
+  width: 100%;
+  left: 0;
 }
 .navbar-sliding-popup {
   display: -webkit-flex;
