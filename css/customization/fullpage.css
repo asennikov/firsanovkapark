@@ -25,8 +25,6 @@
   background: #a7a9ac;
 
   -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 .fp-slidesNav.bottom ul li a.active span,

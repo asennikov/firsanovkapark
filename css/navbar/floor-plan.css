@@ -1,0 +1,56 @@
+.floor-plan {
+  width: 100%;
+}
+.floor-plan-container {
+  position: relative;
+  height: 450px;
+}
+.floor-plan-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url('../../img/floor-plans/1.jpg') center no-repeat;
+  background-size: contain;
+
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+}
+.floor-plan-content.active {
+  opacity: 1;
+}
+
+.floor-plan-selector {
+  margin-top: 50px;
+  font-size: 25px;
+}
+.floor-plan-selector-list {
+  list-style-type: none;
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+}
+.floor-plan-selector-list li {
+  display: inline-block;
+}
+.floor-plan-selector-list li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  background: black;
+  margin: 0 13px;
+  font-size: 25px;
+  font-style: normal;
+  text-decoration: none;
+}
+.floor-plan-selector-list li:hover a,
+.floor-plan-selector-list li.active a {
+  background: #6c6d70;
+}
