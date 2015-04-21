@@ -18,6 +18,9 @@
   font-size: 42px;
   margin-bottom: 30px;
 }
+.cover-frame-map .cover-frame-content a {
+  pointer-events: auto;
+}
 .cover-frame-map-transports-icon {
   width: 330px;
   height: 88px;
