@@ -1,4 +1,24 @@
-$(document).ready(function(){
+var setBookingStatuses = function(floor) {
+  var building = parseInt($('.floor-plan-caption-index').text().trim(), 10) - 1;
+  floor = floor || 0;
+
+  if (buildings && buildings.length) {
+    $('.flat').each(function(flat) {
+      var booked = buildings[building].floors[floor].flats[flat];
+
+      if (booked) {
+        $(this).attr('class', 'booked flat');
+      }
+      else {
+        $(this).attr('class', 'flat');
+      }
+    });
+  }
+
+  powertipInit();
+};
+
+var powertipInit = function() {
   $('.flat.booked').data('powertip', 'Забронировано');
   $('.flat:not(.booked)').data('powertip', 'Оставить заявку');
 
@@ -11,7 +31,9 @@ $(document).ready(function(){
     intentPollInterval: 100,
     intentSensitivity: 100
   });
+};
 
+$(document).ready(function(){
   $('.flat:not(.booked)').click(function() {
     $('.navbar .navbar-contacts .show-popup.link').click();
   });
@@ -19,9 +41,9 @@ $(document).ready(function(){
   $('.floor-plan-selector li a').click(function() {
     var activeSelectorItem = $('.floor-plan-selector li.active');
     var selectorItem = $(this).parent();
-    var selectorItemIndex = selectorItem.index('.floor-plan-selector li');
+    var selectedFloor = selectorItem.index('.floor-plan-selector li');
     var activeContentItem = $('.floor-plan-content-item.active');
-    var selectedContentItem = $('.floor-plan-content-item:eq(' + selectorItemIndex + ')');
+    var selectedContentItem = $('.floor-plan-content-item:eq(' + selectedFloor + ')');
 
     if (!selectorItem.hasClass('active')) {
       activeSelectorItem.removeClass('active');
@@ -29,6 +51,8 @@ $(document).ready(function(){
 
       activeContentItem.removeClass('active');
       selectedContentItem.addClass('active');
+
+      setBookingStatuses(selectedFloor);
     }
 
     return false;

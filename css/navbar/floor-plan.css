@@ -1,6 +1,11 @@
 .floor-plan {
   width: 100%;
 }
+.floor-plan-caption {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
 .floor-plan-content {
   position: relative;
   height: 450px;
@@ -53,8 +58,8 @@
 }
 
 .floor-plan-selector {
-  margin-top: 50px;
-  font-size: 25px;
+  margin-top: 30px;
+  font-size: 20px;
 }
 .floor-plan-selector-list {
   list-style-type: none;
