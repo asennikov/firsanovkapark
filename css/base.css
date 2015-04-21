@@ -50,9 +50,12 @@ section:nth-of-type(6) { top: -475px; }
 .cover-frame-content {
   position: relative;
   z-index: 5;
-  padding: 0 120px;
+  padding: 0 180px;
   display: table-cell;
   vertical-align: middle;
+}
+.cover-frame-content-wide {
+  padding: 0 100px;
 }
 
 .cover-frame-content-shadow {
