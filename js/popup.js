@@ -32,8 +32,7 @@ $(document).ready(function(){
       else if (popupId === 'floor-plan-popup') {
         var selectedBuildingIndex = $(this).data('building-index');
         $('.floor-plan-caption-index').text(selectedBuildingIndex);
-        
-        setBookingStatuses();
+        $('.floor-plan-selector li a:first').click();
       }
     }
 

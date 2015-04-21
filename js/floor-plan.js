@@ -51,9 +51,9 @@ $(document).ready(function(){
 
       activeContentItem.removeClass('active');
       selectedContentItem.addClass('active');
-
-      setBookingStatuses(selectedFloor);
     }
+
+    setBookingStatuses(selectedFloor);
 
     return false;
   });
