@@ -17,16 +17,18 @@ $(document).ready(function(){
   });
 
   $('.floor-plan-selector li a').click(function() {
+    var activeSelectorItem = $('.floor-plan-selector li.active');
     var selectorItem = $(this).parent();
     var selectorItemIndex = selectorItem.index('.floor-plan-selector li');
+    var activeContentItem = $('.floor-plan-content-item.active');
+    var selectedContentItem = $('.floor-plan-content-item:eq(' + selectorItemIndex + ')');
 
     if (!selectorItem.hasClass('active')) {
-      $('.floor-plan-selector li.active').removeClass('active');
+      activeSelectorItem.removeClass('active');
       selectorItem.addClass('active');
 
-      $('.floor-plan-content').fadeOut(150, function() {
-        $(this).fadeIn(150);
-      });
+      activeContentItem.removeClass('active');
+      selectedContentItem.addClass('active');
     }
 
     return false;

@@ -105,18 +105,20 @@
       <div class="sliding-popup" id="floor-plan-popup">
         <div class="floor-plan">
           <div class="floor-plan-content">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 viewBox="0 0 708 450" xml:space="preserve">
-              <g>
-              	<image style="overflow:visible;" width="708" height="450" xlink:href="img/floor-plans/1.jpg" >
-              	</image>
-              </g>
-              <path class="flat" d="M122.173,27.816v176h230v-157h-60v-19H122.173z"/>
-              <path class="booked flat" d="M352.786,46.816h60v-19h171v176h-231V46.816z"/>
-              <path class="flat" d="M583.469,70.786h98v336h-99v-151h-80.231v-52h81.231V70.786z"/>
-              <path class="flat" d="M581.969,255.786v151H416.524v-151H581.969z"/>
-              <path class="booked flat" d="M201.48,255.786h150v138h-69v13h-81V255.786z"/>
-              <path class="flat" d="M201.5,407h-180V70h99v133h81V407z"/>
+            <div class="active floor-plan-content-item"></div>
+            <div class="floor-plan-content-item"></div>
+            <div class="floor-plan-content-item"></div>
+
+            <svg class="overlay" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 1000 604" xml:space="preserve">
+
+              <path class="flat" d="M166,22v250.816h334V58H399V22H166z"/>
+            	<path class="booked flat" d="M500,58h95V22h232v250.816H500V58z"/>
+            	<path class="flat" d="M827,96h131v471H827V350H711v-77.184h116V96z"/>
+            	<path class="flat" d="M827,567H713H595V350h232V567z"/>
+            	<path class="booked flat" d="M282,350l218,1v188H399.24v28H282V350z"/>
+            	<path class="flat" d="M282,567H36.5V96L166,96.816v176h116V567z"/>
+
             </svg>
           </div>
 
@@ -126,7 +128,6 @@
               <li class="active"><a href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
             </ul>
           </div>
         </div>
