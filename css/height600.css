@@ -28,4 +28,12 @@
   .floor-plan-container {
     height: 300px;
   }
+  .cover-frame-map-transports-icon {
+    width: 165px;
+    height: 44px;
+  }
+  .cover-frame-map-pin-icon {
+    width: 100px;
+    height: 140px;
+  }
 }
