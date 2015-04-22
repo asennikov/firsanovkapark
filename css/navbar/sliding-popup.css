@@ -8,12 +8,16 @@
   overflow: hidden;
   z-index: 20;
 
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -ms-flex-direction: column;
   -webkit-flex-direction: column; /* works with row or column */
   flex-direction: column;
+  -ms-flex-line-pack: center;
   -webkit-align-items: center;
   align-items: center;
+  -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 
@@ -32,12 +36,16 @@
   padding: 8% 0;
   box-sizing: border-box;
 
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -ms-flex-direction: column;
   -webkit-flex-direction: column; /* works with row or column */
   flex-direction: column;
+  -ms-flex-line-pack: center;
   -webkit-align-items: center;
   align-items: center;
+  -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
@@ -46,6 +54,7 @@
   width: 100%;
   text-align: center;
 
+  -ms-flex: 1;
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
 }
