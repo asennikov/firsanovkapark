@@ -51,6 +51,8 @@ $(document).ready(function(){
 
   // Init Fullpage.js plugin
 
+  var sectionPadding = $('section:first').css('padding-top');
+
   $('.wrapper').fullpage({
     anchors: ['main', 'plan', 'atmosphere', 'advantages', 'map', 'application'],
     sectionSelector: 'section',
@@ -59,7 +61,7 @@ $(document).ready(function(){
     css3: !cssUnfriendlyBrowser,
     easing: 'linear',
     verticalCentered: false,
-    paddingTop: 95,
+    paddingTop: sectionPadding,
 
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);

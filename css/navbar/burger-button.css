@@ -1,5 +1,6 @@
 .burger-button {
-  cursor: pointer; padding: 18px 50px 20px 0px;
+  cursor: pointer;
+  padding: 18px 50px 20px 0px;
 }
 
 .burger-button span,
