@@ -1,5 +1,9 @@
 .fp-slidesNav.bottom {
   bottom: 140px;
+  
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 @media only screen and (orientation: landscape) {
   .fp-slidesNav.bottom {

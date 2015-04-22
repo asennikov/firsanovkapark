@@ -45,12 +45,9 @@ $(document).ready(function(){
     });
   };
 
-  // For some reason css3 transitions produce glitches in desktop Safari
-  var cssUnfriendlyBrowser = bowser.safari && !bowser.ios;
-  var timeout;
-
   // Init Fullpage.js plugin
 
+  var timeout;
   var sectionPadding = $('section:first').css('padding-top');
 
   $('.wrapper').fullpage({
@@ -58,7 +55,6 @@ $(document).ready(function(){
     sectionSelector: 'section',
     slideSelector: '.slide',
     slidesNavigation: true,
-    css3: !cssUnfriendlyBrowser,
     easing: 'linear',
     verticalCentered: false,
     paddingTop: sectionPadding,

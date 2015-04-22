@@ -156,6 +156,8 @@ html, body {
                 top: 50%;
                 margin: -2px 0 0 -2px;
                 -webkit-transition: all 0.1s ease-in-out;
+                -moz-transition: all 0.1s ease-in-out;
+                -o-transition: all 0.1s ease-in-out;
                 transition: all 0.1s ease-in-out;
             }
         }
@@ -181,7 +183,7 @@ html, body {
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
     &.right {
-       right: 17px;
+       right: 17px; 
     }
     &.left {
         left: 17px
