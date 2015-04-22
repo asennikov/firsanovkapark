@@ -29,7 +29,7 @@
   list-style-type: none;
   margin: 0 auto;
   height: 100%;
-  padding: 50px 0;
+  padding: 8% 0;
   box-sizing: border-box;
 
   display: -webkit-flex;
@@ -52,8 +52,8 @@
 .sliding-popup-menu li a {
   position: relative;
   display: inline-block;
-  padding: 0 60px;
-  font-size: 50px;
+  padding: 0 40px;
+  font-size: 33px;
   font-style: italic;
   text-decoration: none;
 
