@@ -1,27 +1,42 @@
 /* Portrait */
 @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  .big-screens {
+    display: none;
+  }
+  .sliding-popup h1 {
+    font-size: 20px;
+  }
   .cover-frame-content h1,
   .application-form-editable,
   .application-form-input-dummy {
     font-size: 30px;
   }
+  .cover-frame-application .cover-frame-content p,
+  .sliding-popup p {
+    font-size: 15px;
+  }
+  .cover-frame-application-phone {
+    font-size: 34px;
+  }
   .cover-frame-content h1 {
     padding: 50px 0;
-  }
-  .cover-frame-content p {
-    display: none;
-  }
-  .cover-frame-content img {
-    display: none;
   }
   .application-form-input {
     margin-bottom: 20px;
   }
   .application-form-input-dummy {
-    line-height: 33px;
+    line-height: 35px;
   }
   .application-form button {
     margin-top: 20px;
+    font-size: 20px;
+    height: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .application-form-input-dummy,
+  .cover-frame-application .cover-frame-content h1 a::after {
+    border-bottom-width: 2px;
   }
   .cover-frame-content,
   .cover-frame-content-wide {
@@ -65,19 +80,28 @@
 
 /* Landscape */
 @media only screen and (min-width: 480px) and (max-width: 1023px) and (orientation: landscape) {
+  .big-screens {
+    display: none;
+  }
+  .sliding-popup h1 {
+    font-size: 20px;
+  }
+  .sliding-popup p {
+    font-size: 12px;
+  }
   .cover-frame-content h1,
   .application-form-editable,
   .application-form-input-dummy {
     font-size: 30px;
   }
+  .cover-frame-application .cover-frame-content p {
+    font-size: 15px;
+  }
+  .cover-frame-application-phone {
+    font-size: 34px;
+  }
   .cover-frame-content h1 {
     padding: 50px 0;
-  }
-  .cover-frame-content p {
-    display: none;
-  }
-  .cover-frame-content img {
-    display: none;
   }
   .application-form-input {
     margin-bottom: 20px;
@@ -87,6 +111,10 @@
   }
   .application-form button {
     margin-top: 20px;
+    font-size: 20px;
+    height: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
   .cover-frame-content {
     padding: 0 100px;

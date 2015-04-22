@@ -1,7 +1,8 @@
 @media screen and (min-width: 1280px) and (max-width: 1599px) {
   .cover-frame-content h1,
   .application-form-editable,
-  .application-form-input-dummy {
+  .application-form-input-dummy,
+  .sliding-popup h1 {
     font-size: 50px;
   }
   .cover-frame-content p {
@@ -22,16 +23,6 @@
   .cover-frame-content-wide {
     padding: 0 100px;
   }
-  /*
-
-  .navbar-sliding-menu ul,
-  .navbar-sliding-popup ul {
-    padding: 20px 0;
-  }
-  .navbar-sliding-menu ul li a,
-  .navbar-sliding-popup ul li a {
-    font-size: 21px;
-  }
   .floor-plan-container {
     height: 300px;
   }
@@ -42,9 +33,5 @@
   .cover-frame-map-pin-icon {
     width: 100px;
     height: 140px;
-  }*/
-}
-
-@media screen and (min-width: 1600px) {
-  
+  }
 }
