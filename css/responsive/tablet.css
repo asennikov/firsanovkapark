@@ -1,0 +1,72 @@
+/* Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .cover-frame-content h1,
+  .application-form-editable,
+  .application-form-input-dummy {
+    font-size: 45px;
+  }
+  .cover-frame-content p {
+    font-size: 25px;
+  }
+  .application-form-input {
+    margin-bottom: 20px;
+  }
+  .application-form-input-dummy {
+    line-height: 49px;
+  }
+  .application-form button {
+    margin-top: 20px;
+  }
+  .cover-frame-content {
+    padding: 0 100px;
+  }
+  .cover-frame-content-wide {
+    padding: 0 30px;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 0px;
+  }
+  .fp-controlArrow.fp-next {
+    right: 0px;
+  }
+  .cover-frame-footer-side-link,
+  .cover-frame-footer-side-link:focus {
+    right: 10px;
+  }
+  .cover-frame-advantages .cover-frame-footer-side-link {
+    padding-right: 60px;
+  }
+  .cover-frame-advantages .cover-frame-footer-side-link::after {
+    top: 3px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .cover-frame-content h1,
+  .application-form-editable,
+  .application-form-input-dummy {
+    font-size: 40px;
+  }
+  .cover-frame-content p {
+    font-size: 25px;
+  }
+  .application-form-input {
+    margin-bottom: 20px;
+  }
+  .application-form-input-dummy {
+    line-height: 44px;
+  }
+  .application-form button {
+    margin-top: 20px;
+  }
+  .cover-frame-content {
+    padding: 0 180px;
+  }
+  .cover-frame-content-wide {
+    padding: 0 100px;
+  }
+}

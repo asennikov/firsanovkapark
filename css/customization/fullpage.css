@@ -1,7 +1,12 @@
 .fp-slidesNav.bottom {
-  left: 50px;
-  bottom: 30px;
-  margin-left: 0 !important;
+  bottom: 140px;
+}
+@media only screen and (orientation: landscape) {
+  .fp-slidesNav.bottom {
+    left: 50px;
+    bottom: 30px;
+    margin-left: 0 !important;
+  }
 }
 .fp-slidesNav.bottom ul li {
   width: 26px;
