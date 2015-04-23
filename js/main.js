@@ -98,6 +98,13 @@ $(document).ready(function(){
     slidesToShow: 1
   });
 
+  // Init Jquery.pep to drag floor-plans in popup
+
+  $('.active.floor-plan-content-item').pep({
+    startPos: { left: '50%', top: 0 },
+    removeMargins: false
+  });
+
 });
 
 $(window).load(function() {
