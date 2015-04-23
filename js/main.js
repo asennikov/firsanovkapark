@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   // Calculate hovers for buildings positions on 'plan' frame
 
   var recalcHoverPositions = function() {
@@ -82,7 +81,10 @@ $(document).ready(function(){
       }
     },
     afterResize: recalcHoverPositions,
-    afterRender: recalcHoverPositions
+    afterRender: function() {
+      recalcHoverPositions();
+
+    }
   });
 
   // Init Slick.js carousel in popup
@@ -94,4 +96,8 @@ $(document).ready(function(){
     slidesToShow: 1
   });
 
+});
+
+$(window).load(function() {
+  $('.preloader').fadeOut(500);
 });

@@ -14,6 +14,27 @@ a img {
   border: 0;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: white;
+}
+.preloader-image {
+  display: block;
+  width: 458px;
+  max-width: 100%;
+  height: 128px;
+  position: relative;
+  top: 50%;
+  margin: -64px auto 0;
+  background: white url('../img/preloader.gif') center no-repeat;
+  background-size: contain;
+}
+
 .wrapper {
   height: 100%;
   position: relative;

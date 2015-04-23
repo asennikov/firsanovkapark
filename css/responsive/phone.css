@@ -25,6 +25,8 @@
     top: 55px;
   }
   .navbar .burger-button {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
     transform: scale(0.6);
     left: 10px;
   }
@@ -138,6 +140,8 @@
     top: 55px;
   }
   .navbar .burger-button {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
     transform: scale(0.6);
     left: 10px;
   }
