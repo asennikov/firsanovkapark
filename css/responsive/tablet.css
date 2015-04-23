@@ -15,6 +15,9 @@
   .navbar .navbar-contacts {
     display: none;
   }
+  .cover-frame-content-shadow {
+    padding: 50px 0;
+  }
   .cover-frame-content h1,
   .application-form-editable,
   .application-form-input-dummy {
@@ -28,6 +31,9 @@
   }
   .application-form-input-dummy {
     line-height: 49px;
+  }
+  .button {
+    margin-top: 20px;
   }
   .button:hover {
     color: white;
@@ -73,6 +79,9 @@
   .sliding-popup p {
     font-size: 20px;
   }
+  .cover-frame-content-shadow {
+    padding: 50px 0;
+  }
   .cover-frame-content h1,
   .application-form-editable,
   .application-form-input-dummy {
@@ -94,7 +103,7 @@
     height: 0;
     opacity: 0;
   }
-  .application-form button {
+  .button {
     margin-top: 20px;
   }
   .cover-frame-content {

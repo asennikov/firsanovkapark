@@ -56,8 +56,10 @@
   .cover-frame-application-phone {
     font-size: 34px;
   }
-  .cover-frame-content h1 {
+  .cover-frame-content-shadow {
     padding: 50px 0;
+  }
+  .cover-frame-content h1 {
     margin: 0;
   }
   .cover-frame-application .cover-frame-content h1 {
@@ -69,14 +71,12 @@
   .application-form-input-dummy {
     line-height: 35px;
   }
-  .application-form button {
-    margin-top: 20px;
-  }
   .button {
+    margin-top: 30px;
     font-size: 20px;
-    height: 60px;
-    padding-left: 35px;
-    padding-right: 35px;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .button:hover {
     color: white;
@@ -187,8 +187,10 @@
   .cover-frame-application-phone {
     font-size: 34px;
   }
-  .cover-frame-content h1 {
+  .cover-frame-content-shadow {
     padding: 50px 0;
+  }
+  .cover-frame-content h1 {
     margin: 0;
   }
   .cover-frame-application .cover-frame-content h1 {
@@ -200,14 +202,12 @@
   .application-form-input-dummy {
     line-height: 33px;
   }
-  .application-form button {
-    margin-top: 20px;
-  }
   .button {
+    margin-top: 20px;
     font-size: 20px;
-    height: 60px;
-    padding-left: 35px;
-    padding-right: 35px;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .button:hover {
     color: white;

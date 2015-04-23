@@ -61,8 +61,10 @@ $(document).ready(function(){
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
       var hidingContent = loadedSection.find('.cover-frame-wrapper');
+      var contentForBigScreens = hidingContent.find('.big-screens:first');
+      var screenIsBig = contentForBigScreens.css('display') !== 'none';
 
-      if(anchorLink == 'plan'){
+      if(anchorLink == 'plan' && screenIsBig) {
         clearTimeout(timeout);
         hidingContent.show();
 
