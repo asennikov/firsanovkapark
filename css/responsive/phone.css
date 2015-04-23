@@ -71,10 +71,19 @@
   }
   .application-form button {
     margin-top: 20px;
+  }
+  .button {
     font-size: 20px;
     height: 60px;
     padding-left: 35px;
     padding-right: 35px;
+  }
+  .button:hover {
+    color: white;
+  }
+  .button:hover::after {
+    height: 0;
+    opacity: 0;
   }
   .application-form-input-dummy,
   .cover-frame-application .cover-frame-content h1 a::after {
@@ -115,10 +124,10 @@
     border-left-width: 28px;
     border-right-width: 28px;
   }
+  .cover-frame-map .cover-frame-wrapper {
+    pointer-events: auto;
+  }
 }
-/*@media only screen and (min-width: 640px) and (max-width: 767px) and (orientation: portrait) {
-
-}*/
 
 /* Landscape */
 @media only screen and (min-width: 480px) and (max-width: 959px) and (orientation: landscape) {
@@ -193,10 +202,19 @@
   }
   .application-form button {
     margin-top: 20px;
+  }
+  .button {
     font-size: 20px;
     height: 60px;
     padding-left: 35px;
     padding-right: 35px;
+  }
+  .button:hover {
+    color: white;
+  }
+  .button:hover::after {
+    height: 0;
+    opacity: 0;
   }
   .cover-frame-content {
     padding: 0 100px;
@@ -251,7 +269,7 @@
     border-left-width: 28px;
     border-right-width: 28px;
   }
+  .cover-frame-map .cover-frame-wrapper {
+    pointer-events: auto;
+  }
 }
-/*@media only screen and (min-width: 960px) and (max-width: 1023px) and (orientation: landscape) {
-
-}*/

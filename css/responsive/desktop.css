@@ -1,4 +1,7 @@
 @media screen and (min-width: 1280px) and (max-width: 1599px) {
+  .small-screens {
+    display: none;
+  }
   .cover-frame-content h1,
   .application-form-editable,
   .application-form-input-dummy,
@@ -26,6 +29,9 @@
 }
 
 @media screen and (min-width: 1600px) {
+  .small-screens {
+    display: none;
+  }
   .sliding-popup-menu {
     padding: 8% 0 10%;
   }

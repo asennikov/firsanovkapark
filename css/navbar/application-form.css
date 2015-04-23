@@ -40,6 +40,10 @@
   line-height: 88px;
 }
 
+.application-form button {
+  margin-top: 50px;
+}
+
 .application-success {
   display: none;
 }
