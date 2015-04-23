@@ -13,7 +13,7 @@
   .navbar .navbar-brand>img {
     height: 15px;
   }
-  section {
+  section, .sliding-popup {
     padding-top: 55px;
   }
   section:nth-of-type(2) { top: -55px; }
@@ -36,6 +36,13 @@
 
   .sliding-popup h1 {
     font-size: 20px;
+  }
+  .sliding-popup-menu {
+    padding: 15% 0 27%;
+  }
+  .sliding-popup-menu li a {
+    font-size: 30px;
+    padding: 20px;
   }
   .cover-frame-content h1,
   .application-form-editable,
@@ -128,7 +135,7 @@
   .navbar .navbar-brand>img {
     height: 15px;
   }
-  section {
+  section, .sliding-popup {
     padding-top: 55px;
   }
   section:nth-of-type(2) { top: -55px; }
@@ -153,6 +160,12 @@
   }
   .sliding-popup p {
     font-size: 12px;
+  }
+  .sliding-popup-menu {
+    padding: 0 0 2%;
+  }
+  .sliding-popup-menu li a {
+    font-size: 26px;
   }
   .cover-frame-content h1,
   .application-form-editable,
