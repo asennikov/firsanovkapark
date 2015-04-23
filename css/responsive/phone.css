@@ -1,5 +1,5 @@
 /* Portrait */
-@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+@media only screen and (min-width: 320px) and (max-width: 599px) and (orientation: portrait) {
   .big-screens {
     display: none;
   }
@@ -121,7 +121,7 @@
 }*/
 
 /* Landscape */
-@media only screen and (min-width: 480px) and (max-width: 1023px) and (orientation: landscape) {
+@media only screen and (min-width: 480px) and (max-width: 959px) and (orientation: landscape) {
   .big-screens {
     display: none;
   }
