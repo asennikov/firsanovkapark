@@ -89,6 +89,9 @@
   .cover-frame-application .cover-frame-content h1 a::after {
     border-bottom-width: 2px;
   }
+  .cover-frame-container {
+    padding-bottom: 90px;
+  }
   .cover-frame-content,
   .cover-frame-content-wide {
     padding: 0 20px;
@@ -216,6 +219,9 @@
     height: 0;
     opacity: 0;
   }
+  .cover-frame-container {
+    padding-bottom: 60px;
+  }
   .cover-frame-content {
     padding: 0 100px;
   }
@@ -224,11 +230,13 @@
   }
   .fp-controlArrow.fp-prev {
     left: 0px;
-    margin-top: -40px;
   }
   .fp-controlArrow.fp-next {
     right: 0px;
-    margin-top: -40px;
+  }
+  .fp-controlArrow.fp-prev,
+  .fp-controlArrow.fp-next {
+    margin-top: -70px;
   }
   .cover-frame-footer-side-link,
   .cover-frame-footer-side-link:focus {

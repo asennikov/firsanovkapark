@@ -23,6 +23,9 @@
   .application-form-input-dummy {
     font-size: 45px;
   }
+  .cover-frame-content h1 {
+    margin-bottom: 0;
+  }
   .cover-frame-content p {
     font-size: 25px;
   }
@@ -45,6 +48,9 @@
   .application-form button {
     margin-top: 20px;
   }
+  .cover-frame-container {
+    padding-bottom: 170px;
+  }
   .cover-frame-content {
     padding: 0 100px;
   }
@@ -56,6 +62,10 @@
   }
   .fp-controlArrow.fp-next {
     right: 0px;
+  }
+  .fp-controlArrow.fp-prev,
+  .fp-controlArrow.fp-next {
+    margin-top: -105px;
   }
   .fp-slidesNav.bottom ul li a span {
     background: black;
@@ -86,6 +96,9 @@
   .application-form-editable,
   .application-form-input-dummy {
     font-size: 40px;
+  }
+  .cover-frame-content h1 {
+    margin-bottom: 0;
   }
   .cover-frame-content p {
     font-size: 25px;
