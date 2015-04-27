@@ -54,10 +54,13 @@
     font-size: 15px;
   }
   .cover-frame-application-phone {
-    font-size: 34px;
+    font-size: 32px;
   }
   .cover-frame-content-shadow {
     padding: 50px 0;
+  }
+  .cover-frame-application .cover-frame-content-shadow {
+    padding: 0;
   }
   .cover-frame-content h1 {
     margin: 0;
@@ -192,6 +195,9 @@
   }
   .cover-frame-content-shadow {
     padding: 50px 0;
+  }
+  .cover-frame-application .cover-frame-content-shadow {
+    padding: 0;
   }
   .cover-frame-content h1 {
     margin: 0;
