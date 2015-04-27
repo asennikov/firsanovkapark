@@ -1,0 +1,58 @@
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+  .small-screens {
+    display: none;
+  }
+  .cover-frame-content h1,
+  .application-form-editable,
+  .application-form-input-dummy,
+  .sliding-popup h1 {
+    font-size: 50px;
+  }
+  .cover-frame-content p {
+    font-size: 30px;
+  }
+  .application-form-input {
+    margin-bottom: 25px;
+  }
+  .application-form-input-dummy {
+    line-height: 56px;
+  }
+  .application-form button {
+    margin-top: 25px;
+  }
+  .cover-frame-content {
+    padding: 0 180px;
+  }
+  .cover-frame-content-wide {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .small-screens {
+    display: none;
+  }
+  .sliding-popup-menu {
+    padding: 8% 0 10%;
+  }
+  .sliding-popup-menu li a {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-height: 650px) {
+  .sliding-popup-menu {
+    padding: 3% 0 6%;
+  }
+  .cover-frame-map-transports-icon {
+    width: 165px;
+    height: 44px;
+  }
+  .cover-frame-map-pin-icon {
+    width: 100px;
+    height: 140px;
+  }
+  .floor-plan-container {
+    height: 300px;
+  }
+}

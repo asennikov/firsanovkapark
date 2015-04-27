@@ -25,6 +25,9 @@
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
+.sliding-popup-scrollable-area {
+  overflow: auto;
+}
 
 .sliding-popup.active{
   top: 0;
@@ -121,61 +124,4 @@
   margin-right: auto;
   font-style: normal;
   font-size: 20px;
-}
-
-@media only screen and (min-width: 300px) {
-  .sliding-popup h1 {
-    font-size: 20px;
-  }
-  .sliding-popup p {
-    font-size: 10px;
-  }
-}
-@media only screen and (min-width: 360px) {
-  .sliding-popup h1 {
-    font-size: 30px;
-  }
-  .sliding-popup p {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .sliding-popup h1 {
-    font-size: 36px;
-  }
-  .sliding-popup p {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 720px) {
-  .sliding-popup h1 {
-    font-size: 48px;
-  }
-  .sliding-popup p {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .sliding-popup h1 {
-    font-size: 56px;
-  }
-  .sliding-popup p {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 1444px) {
-  .sliding-popup h1 {
-    font-size: 70px;
-  }
-  .sliding-popup p {
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 1900px) {
-  .sliding-popup h1 {
-    font-size: 70px;
-  }
-  .sliding-popup p {
-    font-size: 24px;
-  }
 }

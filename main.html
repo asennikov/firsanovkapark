@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Фирсановка Риверсайд Парк</title>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage/jquery.fullPage.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="lib/powertip/jquery.powertip.min.css"/>
@@ -25,6 +25,23 @@
     <![endif]-->
   </head>
   <body>
+    <div class="preloader">
+      <img class="preloader-image" src="img/svg/logo.svg" alt="Firsanovka Park" />
+      <div class="wrap2">
+        <div class="boxcube2">
+          <div class="boxfront face1" style="background-color: #e1f868;"></div>
+          <div class="boxback face1" style="background-color: #00b39f;"></div>
+          <div class="boxtop face1" style="background-color: #244c57;"></div>
+          <div class="boxbottom face1" style="background-color: #00abcc;"></div>
+          <div class="boxleft face1" style="background-color: #e1f868;">
+            <div class="face2"></div>
+          </div>
+          <div class="boxright face1" style="background-color: #e1f868;">
+            <div class="face2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <nav class="navbar">
 
@@ -34,7 +51,8 @@
           <img src="img/svg/logo.svg" alt="Firsanovka Park" />
         </a>
         <div class="navbar-contacts">
-          <span class="navbar-contacts-phone">+7 495 667 84 34</span>
+          <span class="navbar-contacts-phone">+7 (495) 220 06 68</span>
+          <span class="navbar-contacts-phone">+7 (929) 914 19 10</span>
           <a href="#" class="show-popup link" data-popup-id="application-popup">Оставить заявку</a>
         </div>
       </div>
@@ -47,7 +65,7 @@
           <li><a href="#advantages">Преимущества</a></li>
           <li><a href="#map">Карта проезда</a></li>
           <li><a href="#application">Оставить заявку</a></li>
-          <li><a href="#" class="show-popup" data-popup-id="docs-popup">Документы</a></li>
+          <li class="big-screens"><a href="#" class="show-popup" data-popup-id="docs-popup">Документы</a></li>
         </ul>
       </div>
 
@@ -104,15 +122,15 @@
 
       <div class="sliding-popup" id="floor-plan-popup">
         <div class="floor-plan">
-          <div class="floor-plan-caption">
+          <div class="big-screens floor-plan-caption">
             <span class="floor-plan-caption-index">1</span> корпус
           </div>
           <div class="floor-plan-content">
             <div class="active floor-plan-content-item"></div>
-            <div class="floor-plan-content-item"></div>
-            <div class="floor-plan-content-item"></div>
+            <div class="big-screens floor-plan-content-item"></div>
+            <div class="big-screens floor-plan-content-item"></div>
 
-            <svg class="overlay" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="big-screens overlay" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             	 viewBox="0 0 1000 604" xml:space="preserve">
 
               <path class="flat" d="M282,350l218,1v188H399.24v28H282V350z"/>
@@ -126,7 +144,7 @@
             </svg>
           </div>
 
-          <div class="floor-plan-selector">
+          <div class="big-screens floor-plan-selector">
             Выберите этаж:
             <ul class="floor-plan-selector-list">
               <li class="active"><a href="#">1</a></li>
@@ -138,7 +156,7 @@
       </div>
 
       <div class="sliding-popup" id="history-popup">
-        <div>
+        <div class="sliding-popup-scrollable-area">
           <h1>История Фирсановки</h1>
 
           <p>
@@ -203,11 +221,11 @@
 
                 <h1>ЖК с особенной семейной атмосферой</h1>
 
-                <p>
+                <p class="big-screens">
                   Прокрутите страницу, чтобы узнать о всех преимуществах ЖК «Фирсановка Парк»
                 </p>
 
-                <img src="img/svg/scroll.svg" class="cover-frame-main-scoll-icon" alt="Scroll down" />
+                <img src="img/svg/scroll.svg" class="cover-frame-main-scoll-icon big-screens" alt="Scroll down" />
 
               </div>
             </div>
@@ -226,7 +244,13 @@
             <div class="cover-frame-content">
               <div class="cover-frame-content-shadow">
 
-                <p class="alone">
+                <h1 class="small-screens">Посмотрите типичную планировку</h1>
+
+                <a href="#" class="small-screens show-popup" data-popup-id="floor-plan-popup" data-building-index="1">
+                  <button class="button">Планировка</button>
+                </a>
+
+                <p class="big-screens">
                   Выберите дом, чтобы посмотреть планировку
                 </p>
 
@@ -324,7 +348,7 @@
 
                   <h1>Собственная набережная</h1>
 
-                  <p>
+                  <p class="big-screens">
                     Для прогулок и отдыха
                   </p>
                 </div>
@@ -340,7 +364,7 @@
 
                   <h1>Беседки на набережной</h1>
 
-                  <p>
+                  <p class="big-screens">
                     Встречайте рассветы и провожайте закаты в романтической обстановке
                   </p>
                 </div>
@@ -356,7 +380,7 @@
 
                   <h1>Подземный паркинг</h1>
 
-                  <p>
+                  <p class="big-screens">
                     Машины не мешают гулять и играть детям!
                   </p>
                 </div>
@@ -372,7 +396,7 @@
 
                   <h1>Крыши с полезным пространством</h1>
 
-                  <p>
+                  <p class="big-screens">
                     Устроить пикник на крыше или позагорать у бассейна теперь легко
                   </p>
                 </div>
@@ -388,7 +412,7 @@
 
                   <h1>Панорамные окна</h1>
 
-                  <p>
+                  <p class="big-screens">
                     Больше света и воздуха в каждом помещении!
                   </p>
                 </div>
@@ -404,7 +428,7 @@
 
                   <h1>Только натуральные материалы</h1>
 
-                  <p>
+                  <p class="big-screens">
                     Экологичный подход - забота о здоровье детей и родителей
                   </p>
                 </div>
@@ -420,7 +444,7 @@
 
                   <h1>Собственная баня</h1>
 
-                  <p>
+                  <p class="big-screens">
                     Отдохнуть и смыть с себя все лишнее по всем правилам русского банного искусства
                   </p>
                 </div>
@@ -443,7 +467,7 @@
 
                   <h1>Лес с чудесным воздухом</h1>
 
-                  <p>Дышите полной грудью на здоровье!</p>
+                  <p class="big-screens">Дышите полной грудью на здоровье!</p>
 
                 </div>
               </div>
@@ -458,7 +482,7 @@
 
                   <h1>Середниково</h1>
 
-                  <p>Легендарная усадьба Столыпиных, в которой любил бывать Лермонтов</p>
+                  <p class="big-screens">Легендарная усадьба Столыпиных, в которой любил бывать Лермонтов</p>
 
                 </div>
               </div>
@@ -473,7 +497,7 @@
 
                   <h1>Киногород Piligrim Porto</h1>
 
-                  <p>Выставочный комплекс, созданный из декораций к художественным фильмам</p>
+                  <p class="big-screens">Выставочный комплекс, созданный из декораций к художественным фильмам</p>
 
                 </div>
               </div>
@@ -488,7 +512,7 @@
 
                   <h1>Назарьевский пруд</h1>
 
-                  <p>С чистейшей водой и в-о-о-о-т такой рыбой!</p>
+                  <p class="big-screens">С чистейшей водой и в-о-о-о-т такой рыбой!</p>
 
                 </div>
               </div>
@@ -503,7 +527,7 @@
 
                   <h1>Благоустроенный пляж</h1>
 
-                  <p>Загорайте и купайтесь вместе с детьми</p>
+                  <p class="big-screens">Загорайте и купайтесь вместе с детьми</p>
 
                 </div>
               </div>
@@ -518,7 +542,7 @@
 
                   <h1>Храм святителя Алексия</h1>
 
-                  <p>Построен в конце XVII века князем Черкасским</p>
+                  <p class="big-screens">Построен в конце XVII века князем Черкасским</p>
 
                 </div>
               </div>
@@ -533,7 +557,7 @@
 
                   <h1>Санаторий Артема</h1>
 
-                  <p>Отдых, полезный для здоровья</p>
+                  <p class="big-screens">Отдых, полезный для здоровья</p>
 
                 </div>
               </div>
@@ -553,17 +577,21 @@
             <div class="cover-frame-content cover-frame-content-wide">
               <div class="cover-frame-content-shadow">
 
-                <a href="https://goo.gl/maps/hwGXL" target="_blank">
+                <a href="https://goo.gl/maps/hwGXL" class="big-screens" target="_blank">
                   <img src="img/svg/pin.svg" class="cover-frame-map-pin-icon" alt="" />
                 </a>
 
                 <h1>45 минут до центра Москвы</h1>
 
-                <p>
+                <p class="big-screens">
                   Любым видом транспорта
                 </p>
 
-                <img src="img/svg/transports.svg" class="cover-frame-map-transports-icon" alt="" />
+                <a href="https://www.google.ru/maps/dir/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0/%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A4%D0%B8%D1%80%D1%81%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+Life/@55.8732525,37.2713767,11z/data=!4m15!4m14!1m5!1m1!1s0x46b54afc73d4b0c9:0x3d44d6cc5757cf4c!2m2!1d37.6173!2d55.755826!1m5!1m1!1s0x46b53fc27daa3b1f:0x291da19231ffbeea!2m2!1d37.2595358!2d55.9486426!3e0!5i1" class="small-screens" target="_blank">
+                  <button class="button">Перейти к карте</button>
+                </a>
+
+                <img src="img/svg/transports.svg" class="cover-frame-map-transports-icon big-screens" alt="" />
 
               </div>
             </div>
@@ -589,7 +617,9 @@
                   Вы можете оставить заявку или позвонить нам по телефону
                 </p>
 
-                <span class="cover-frame-application-phone">+7 495 667 84 34</span>
+                <span class="cover-frame-application-phone">+7 (495) 220 06 68</span>
+                <br />
+                <span class="cover-frame-application-phone">+7 (929) 914 19 10</span>
               </div>
             </div>
           </div>
@@ -599,9 +629,9 @@
     </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/fullpage.js/jquery.fullPage.min.js"></script>
+    <script src="bower_components/fullpage/jquery.fullPage.min.js"></script>
     <script src="bower_components/slick.js/slick/slick.min.js"></script>
-    <script src="bower_components/bowser/bowser.min.js"></script>
+    <script src="bower_components/jquery.pep/src/jquery.pep.js"></script>
 
     <script src="lib/powertip/jquery.powertip.min.js"></script>
 

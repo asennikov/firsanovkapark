@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   // Calculate hovers for buildings positions on 'plan' frame
 
   var recalcHoverPositions = function() {
@@ -45,27 +44,27 @@ $(document).ready(function(){
     });
   };
 
-  // For some reason css3 transitions produce glitches in desktop Safari
-  var cssUnfriendlyBrowser = bowser.safari && !bowser.ios;
-  var timeout;
-
   // Init Fullpage.js plugin
+
+  var timeout;
+  var sectionPadding = $('section:first').css('padding-top');
 
   $('.wrapper').fullpage({
     anchors: ['main', 'plan', 'atmosphere', 'advantages', 'map', 'application'],
     sectionSelector: 'section',
     slideSelector: '.slide',
     slidesNavigation: true,
-    css3: !cssUnfriendlyBrowser,
     easing: 'linear',
     verticalCentered: false,
-    paddingTop: 95,
+    paddingTop: sectionPadding,
 
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
       var hidingContent = loadedSection.find('.cover-frame-wrapper');
+      var contentForBigScreens = hidingContent.find('.big-screens:first');
+      var screenIsBig = contentForBigScreens.css('display') !== 'none';
 
-      if(anchorLink == 'plan'){
+      if(anchorLink == 'plan' && screenIsBig) {
         clearTimeout(timeout);
         hidingContent.show();
 
@@ -84,7 +83,10 @@ $(document).ready(function(){
       }
     },
     afterResize: recalcHoverPositions,
-    afterRender: recalcHoverPositions
+    afterRender: function() {
+      recalcHoverPositions();
+
+    }
   });
 
   // Init Slick.js carousel in popup
@@ -96,4 +98,15 @@ $(document).ready(function(){
     slidesToShow: 1
   });
 
+  // Init Jquery.pep to drag floor-plans in popup
+
+  $('.active.floor-plan-content-item').pep({
+    startPos: { left: '50%', top: 0 },
+    removeMargins: false
+  });
+
+});
+
+$(window).load(function() {
+  $('.preloader').fadeOut(500);
 });

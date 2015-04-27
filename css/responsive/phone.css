@@ -1,0 +1,289 @@
+/* Portrait */
+@media only screen and (min-width: 320px) and (max-width: 599px) and (orientation: portrait) {
+  .big-screens {
+    display: none !important;
+  }
+  .navbar {
+    height: 55px;
+  }
+  .navbar .navbar-brand {
+    height: 55px;
+    padding: 20px 20px;
+  }
+  .navbar .navbar-brand>img {
+    height: 15px;
+  }
+  section, .sliding-popup {
+    padding-top: 55px;
+  }
+  section:nth-of-type(2) { top: -55px; }
+  section:nth-of-type(3) { top: -110px; }
+  section:nth-of-type(4) { top: -165px; }
+  section:nth-of-type(5) { top: -220px; }
+  section:nth-of-type(6) { top: -275px; }
+  .cover-frame-wrapper {
+    top: 55px;
+  }
+  .navbar .burger-button {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.6);
+    left: 10px;
+  }
+  .navbar .navbar-contacts {
+    display: none;
+  }
+
+  .sliding-popup h1 {
+    font-size: 20px;
+  }
+  .sliding-popup-menu {
+    padding: 15% 0 27%;
+  }
+  .sliding-popup-menu li a {
+    font-size: 30px;
+    padding: 20px;
+  }
+  .cover-frame-content h1,
+  .application-form-editable,
+  .application-form-input-dummy {
+    font-size: 30px;
+  }
+  .cover-frame-application .cover-frame-content p,
+  .sliding-popup p {
+    font-size: 15px;
+  }
+  .cover-frame-application-phone {
+    font-size: 32px;
+  }
+  .cover-frame-content-shadow {
+    padding: 50px 0;
+  }
+  .cover-frame-application .cover-frame-content-shadow {
+    padding: 0;
+  }
+  .cover-frame-content h1 {
+    margin: 0;
+  }
+  .cover-frame-application .cover-frame-content h1 {
+    padding: 0;
+  }
+  .application-form-input {
+    margin-bottom: 20px;
+  }
+  .application-form-input-dummy {
+    line-height: 35px;
+  }
+  .button {
+    margin-top: 30px;
+    font-size: 20px;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .button:hover {
+    color: white;
+  }
+  .button:hover::after {
+    height: 0;
+    opacity: 0;
+  }
+  .application-form-input-dummy,
+  .cover-frame-application .cover-frame-content h1 a::after {
+    border-bottom-width: 2px;
+  }
+  .cover-frame-container {
+    padding-bottom: 90px;
+  }
+  .cover-frame-content,
+  .cover-frame-content-wide {
+    padding: 0 20px;
+  }
+  .fp-controlArrow.fp-prev,
+  .fp-controlArrow.fp-next,
+  .cover-frame-footer-side-link {
+    display: none;
+  }
+  .fp-slidesNav.bottom {
+    bottom: 70px;
+  }
+  .fp-slidesNav.bottom ul li {
+    width: 13px;
+    height: 13px;
+    margin: 0 4px;
+  }
+  .fp-slidesNav.bottom ul li a span {
+    background: black;
+  }
+  .cover-frame-footer {
+    height: 60px;
+  }
+  .cover-frame-footer-next-link,
+  .cover-frame-footer-next-link:focus {
+    width: auto;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .cover-frame-footer-next-link::after {
+    margin-top: 10px;
+    border-top-width: 14px;
+    border-left-width: 28px;
+    border-right-width: 28px;
+  }
+  .cover-frame-map .cover-frame-wrapper {
+    pointer-events: auto;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 480px) and (max-width: 959px) and (orientation: landscape) {
+  .big-screens {
+    display: none !important;
+  }
+  .navbar {
+    height: 55px;
+  }
+  .navbar .navbar-brand {
+    height: 55px;
+    padding: 20px 20px;
+  }
+  .navbar .navbar-brand>img {
+    height: 15px;
+  }
+  section, .sliding-popup {
+    padding-top: 55px;
+  }
+  section:nth-of-type(2) { top: -55px; }
+  section:nth-of-type(3) { top: -110px; }
+  section:nth-of-type(4) { top: -165px; }
+  section:nth-of-type(5) { top: -220px; }
+  section:nth-of-type(6) { top: -275px; }
+  .cover-frame-wrapper {
+    top: 55px;
+  }
+  .navbar .burger-button {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.6);
+    left: 10px;
+  }
+  .navbar .navbar-contacts {
+    display: none;
+  }
+  .sliding-popup h1 {
+    font-size: 20px;
+  }
+  .sliding-popup p {
+    font-size: 12px;
+  }
+  .sliding-popup-menu {
+    padding: 0 0 2%;
+  }
+  .sliding-popup-menu li a {
+    font-size: 26px;
+  }
+  .cover-frame-content h1,
+  .application-form-editable,
+  .application-form-input-dummy {
+    font-size: 30px;
+  }
+  .cover-frame-application .cover-frame-content p {
+    font-size: 15px;
+  }
+  .cover-frame-application-phone {
+    font-size: 34px;
+  }
+  .cover-frame-content-shadow {
+    padding: 50px 0;
+  }
+  .cover-frame-application .cover-frame-content-shadow {
+    padding: 0;
+  }
+  .cover-frame-content h1 {
+    margin: 0;
+  }
+  .cover-frame-application .cover-frame-content h1 {
+    padding: 0;
+  }
+  .application-form-input {
+    margin-bottom: 20px;
+  }
+  .application-form-input-dummy {
+    line-height: 33px;
+  }
+  .button {
+    margin-top: 20px;
+    font-size: 20px;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .button:hover {
+    color: white;
+  }
+  .button:hover::after {
+    height: 0;
+    opacity: 0;
+  }
+  .cover-frame-container {
+    padding-bottom: 60px;
+  }
+  .cover-frame-content {
+    padding: 0 100px;
+  }
+  .cover-frame-content-wide {
+    padding: 0 40px;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 0px;
+  }
+  .fp-controlArrow.fp-next {
+    right: 0px;
+  }
+  .fp-controlArrow.fp-prev,
+  .fp-controlArrow.fp-next {
+    margin-top: -70px;
+  }
+  .cover-frame-footer-side-link,
+  .cover-frame-footer-side-link:focus {
+    right: 10px;
+    bottom: 20px;
+    font-size: 15px;
+  }
+  .cover-frame-advantages .cover-frame-footer-side-link {
+    padding-right: 40px;
+  }
+  .cover-frame-advantages .cover-frame-footer-side-link::after {
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+  }
+  .fp-slidesNav.bottom {
+    bottom: 20px;
+    left: 20px;
+  }
+  .fp-slidesNav.bottom ul li {
+    width: 13px;
+    height: 13px;
+    margin: 0 4px;
+  }
+  .cover-frame-footer {
+    height: 60px;
+  }
+  .cover-frame-footer-next-link,
+  .cover-frame-footer-next-link:focus {
+    width: auto;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .cover-frame-footer-next-link::after {
+    margin-top: 10px;
+    border-top-width: 14px;
+    border-left-width: 28px;
+    border-right-width: 28px;
+  }
+  .cover-frame-map .cover-frame-wrapper {
+    pointer-events: auto;
+  }
+}

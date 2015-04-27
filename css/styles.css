@@ -10,6 +10,7 @@
 @import 'navbar.css';
 @import 'links.css';
 @import 'buttons.css';
+@import 'preloader.css';
 
 /*
  * Customization of external libs
@@ -31,4 +32,6 @@
 /*
  * Media queries
  */
-@import 'height600.css';
+@import 'responsive/phone.css';
+@import 'responsive/tablet.css';
+@import 'responsive/desktop.css';
