@@ -2,7 +2,7 @@ $(document).ready(function(){
   if (window.google) {
     var options = {
         zoom: 14,
-        center:  new google.maps.LatLng(55.967967, 37.280199),
+        center:  new google.maps.LatLng(55.960567, 37.274199),
         scrollwheel: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true
