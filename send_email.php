@@ -4,12 +4,13 @@
 
     $name = $_REQUEST['name'];
     $phone = $_REQUEST['phone'];
+    $comment = $_REQUEST['comment'];
 
     try {
       $mandrill = new Mandrill('6JAVfM-xFK1Joz10qv1oEw');
       $message = array(
-        'html' => '<h1>Новая заявка!</h1><p>Имя: '.$name.'<br />Телефон: '.$phone.'</p>',
-        'text' => 'Новая заявка!\n\nИмя: '.$name.'\nТелефон: '.$phone,
+        'html' => '<h1>Новая заявка!</h1><p>Имя: '.$name.'<br />Телефон: '.$phone.'<br />Комментарий: '.$comment.'</p>',
+        'text' => 'Новая заявка!\n\nИмя: '.$name.'\nТелефон: '.$phone.'\nКомментарий: '.$comment,
         'subject' => 'Новая заявка',
         'from_email' => 'request@firsanovkapark.ru',
         'from_name' => 'Фирсановка Парк',

@@ -15,10 +15,12 @@ $(document).ready(function(){
     var url = window.location.origin;
     var name = $('.application-form input:first').val();
     var phone = $('.application-form input:last').val();
+    var comment = $('.application-form textarea').val();
     var data = {
       send_email: true,
       name: name,
-      phone: phone
+      phone: phone,
+      comment: comment
     };
 
     var onSuccess = function() {
