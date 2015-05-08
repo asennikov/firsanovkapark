@@ -35,4 +35,12 @@ $(document).ready(function(){
     return false;
   });
 
+  $('.application-form-textarea textarea').keydown(function() {
+    var textarea = $(this);
+    setTimeout(function(){
+      textarea.css({ height: '25px', padding: 0 });
+      textarea.css({ height: textarea[0].scrollHeight + 'px'});
+    },0);
+  });
+
 });

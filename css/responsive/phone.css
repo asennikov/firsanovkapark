@@ -133,6 +133,11 @@
   .cover-frame-map .cover-frame-wrapper {
     pointer-events: auto;
   }
+  .application-form-textarea textarea {
+    width: 220px;
+    font-size: 15px;
+    margin: 0;
+  }
 }
 
 /* Landscape */
@@ -285,5 +290,8 @@
   }
   .cover-frame-map .cover-frame-wrapper {
     pointer-events: auto;
+  }
+  .application-form-textarea textarea {
+    margin: 0;
   }
 }

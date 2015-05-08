@@ -32,12 +32,37 @@
 .application-form-editable:focus::-moz-placeholder { color: gray; }
 .application-form-editable:focus:-ms-input-placeholder { color: gray; }
 
+.application-form-textarea textarea::-webkit-input-placeholder { color: black; }
+.application-form-textarea textarea:-moz-placeholder { color: black; }
+.application-form-textarea textarea::-moz-placeholder { color: black; }
+.application-form-textarea textarea:-ms-input-placeholder { color: black; }
+.application-form-textarea textarea:focus::-webkit-input-placeholder { color: gray; }
+.application-form-textarea textarea:focus:-moz-placeholder { color: gray; }
+.application-form-textarea textarea:focus::-moz-placeholder { color: gray; }
+.application-form-textarea textarea:focus:-ms-input-placeholder { color: gray; }
+
 .application-form-input-dummy {
   color: white;
   position: relative;
   display: inline-block;
   border-bottom: 3px dashed black;
   line-height: 88px;
+}
+
+.application-form-textarea textarea {
+  border-width: 0px 0px 2px;
+  border-bottom-style: dashed;
+  border-bottom-color: black;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  font-family: inherit;
+  outline: none;
+  margin: 10px 0 15px 0;
+  padding: 0;
+  width: 336px;
+  height: 25px;
 }
 
 .application-success {
