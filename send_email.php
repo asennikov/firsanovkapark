@@ -16,11 +16,7 @@
         'from_name' => 'Фирсановка Парк',
         'to' => array(
           array(
-            'email' => 'gseno88@gmail.com',
-            'type' => 'to'
-          ),
-          array(
-            'email' => 'i.lyskina@deluxe-interactive.com',
+            'email' => '2205972@mail.ru',
             'type' => 'to'
           )
         )
