@@ -8,11 +8,12 @@
 }
 .floor-plan-content {
   position: relative;
-  height: 450px;
+  height: 419px;
 }
 
 .floor-plan-content svg.overlay,
-.floor-plan-content-item {
+.floor-plan-content-item,
+.floor-plan-content-tooltips {
   position: absolute;
   width: 745px;
   height: 100%;
@@ -23,37 +24,26 @@
 .floor-plan-content-item {
   background-size: cover;
   background-position: center;
-  opacity: 0;
-
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-.floor-plan-content-item:nth-of-type(1) {
-  background-image: url('../../img/floor-plans/1.jpg');
-}
-.floor-plan-content-item:nth-of-type(2) {
-  background-image: url('../../img/floor-plans/2.jpg');
-}
-.floor-plan-content-item:nth-of-type(3) {
-  background-image: url('../../img/floor-plans/3.jpg');
-}
-.floor-plan-content-item.active {
-  opacity: 1;
+  background-image: url('../../img/floor-plans/default.jpg');
 }
 
 .floor-plan-content svg.overlay .flat {
   stroke-width: 0;
   clip-rule: evenodd;
-  fill: white;
+  fill: #cdff6a;
   stroke: black;
   stroke-miterlimit: 10;
   opacity: 0;
   outline: none;
 }
-.floor-plan-content svg.overlay .flat:hover {
-  opacity: 0.2;
+.floor-plan-content svg.overlay .flat.booked {
+  fill: #f8cccd;
 }
-.floor-plan-content svg.overlay .flat:not(.booked):hover {
+.floor-plan-content svg.overlay .flat.booked,
+.floor-plan-content svg.overlay .flat:hover {
+  opacity: 0.7;
+}
+.floor-plan-content svg.overlay .flat:not(.booked) {
   cursor: pointer;
 }
 
@@ -88,4 +78,31 @@
 .floor-plan-selector-list li:hover a,
 .floor-plan-selector-list li.active a {
   background: #6c6d70;
+}
+
+.floor-plan-content-tooltips {
+  pointer-events: none;
+}
+.floor-plan-content-tooltips-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  padding: 0 10px;
+  height: 40px;
+  width: 180px;
+  margin-left: -90px;
+  margin-top: -30px;
+  line-height: 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  display: none;
+}
+
+.floor-plan-content-tooltips-item.booked {
+  display: block;
 }

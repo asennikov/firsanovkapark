@@ -5,52 +5,70 @@ var setBookingStatuses = function(floor) {
   if (buildings && buildings.length) {
     $('.flat').each(function(flat) {
       var booked = buildings[building].floors[floor].flats[flat];
+      var hover = $(this);
+      var tooltip = $('.floor-plan-content-tooltips-item:eq(' + flat + ')');
+
+      hover.off('click');
+      tooltip.off('click');
 
       if (booked) {
-        $(this).attr('class', 'booked flat');
+        hover.attr('class', 'booked flat');
+        tooltip.addClass('booked').text('Забронировано').show();
       }
       else {
-        $(this).attr('class', 'flat');
+        hover.attr('class', 'flat').click(showApplicationPopup);
+        tooltip.removeClass('booked').text('Оставить заявку');
+        tooltip.click(showApplicationPopup).hide();
       }
     });
   }
-
-  powertipInit();
 };
 
-var powertipInit = function() {
-  $('.flat.booked').data('powertip', 'Забронировано');
-  $('.flat:not(.booked)').data('powertip', 'Оставить заявку');
+var showApplicationPopup = function() {
+  $('.navbar .navbar-contacts .show-popup.link').click();
+};
 
-  $('.flat').powerTip({
-    followMouse: true,
-    offset: 30,
-    fadeInTime: 150,
-    fadeOutTime: 150,
-    closeDelay: 100,
-    intentPollInterval: 100,
-    intentSensitivity: 100
+var setTooltipPositions = function() {
+  $('.flat').each(function(index) {
+    var svgRect = $('svg.overlay')[0].getBoundingClientRect();
+    var rect = this.getBoundingClientRect();
+    var tooltip = $('.floor-plan-content-tooltips-item:eq(' + index + ')');
+
+    tooltip.css({
+      left: (rect.left - svgRect.left + rect.width / 2) + 'px',
+      top: (rect.top - svgRect.top + rect.height / 2) + 'px'
+    });
   });
 };
 
-$(document).ready(function(){
-  $('.flat:not(.booked)').click(function() {
-    $('.navbar .navbar-contacts .show-popup.link').click();
+var setHoverInteractions = function() {
+  $('.flat').each(function(index) {
+    var tooltip = $('.floor-plan-content-tooltips-item:eq(' + index + ')');
+    $(this).mouseenter(function() {
+      if (!tooltip.hasClass('booked')) {
+        tooltip.show();
+      }
+    });
+    $(this).mouseleave(function() {
+      if (!tooltip.hasClass('booked')) {
+        tooltip.hide();
+      }
+    });
   });
+};
+
+$(document).ready(function() {
+  setTooltipPositions();
+  setHoverInteractions();
 
   $('.floor-plan-selector li a').click(function() {
     var activeSelectorItem = $('.floor-plan-selector li.active');
     var selectorItem = $(this).parent();
     var selectedFloor = selectorItem.index('.floor-plan-selector li');
-    var activeContentItem = $('.floor-plan-content-item.active');
-    var selectedContentItem = $('.floor-plan-content-item:eq(' + selectedFloor + ')');
 
     if (!selectorItem.hasClass('active')) {
       activeSelectorItem.removeClass('active');
       selectorItem.addClass('active');
-
-      activeContentItem.removeClass('active');
-      selectedContentItem.addClass('active');
     }
 
     setBookingStatuses(selectedFloor);
