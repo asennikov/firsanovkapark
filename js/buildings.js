@@ -5,29 +5,29 @@ var buildings = [
     floors: [
       {
         flats: [
-          true,
-          true,
-          true,
-          true,
-          true,
-          true
-        ]
-      },
-      {
-        flats: [
           false,
           true,
-          false,
-          false,
+          true,
+          true,
           false,
           true
         ]
       },
       {
         flats: [
+          false,
           true,
-          true,
-          true,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        flats: [
+          false,
+          false,
+          false,
           false,
           false,
           false
@@ -143,32 +143,32 @@ var buildings = [
     floors: [
       {
         flats: [
+          true,
+          true,
+          true,
+          true,
           false,
-          false,
-          false,
-          false,
-          false,
-          false
+          true
+        ]
+      },
+      {
+        flats: [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
         ]
       },
       {
         flats: [
           false,
+          true,
+          true,
           false,
           false,
-          false,
-          false,
-          false
-        ]
-      },
-      {
-        flats: [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
+          true
         ]
       },
       {
@@ -189,32 +189,32 @@ var buildings = [
     floors: [
       {
         flats: [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
         ]
       },
       {
         flats: [
-          false,
-          false,
-          false,
-          false,
-          false,
-          false
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
         ]
       },
       {
         flats: [
+          true,
+          true,
+          true,
           false,
-          false,
-          false,
-          false,
-          false,
-          false
+          true,
+          true
         ]
       },
       {
