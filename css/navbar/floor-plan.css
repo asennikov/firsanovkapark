@@ -18,13 +18,16 @@
   width: 745px;
   height: 100%;
   left: 50%;
-  margin-left: -354px;
+  margin-left: -373px;
   top: 0;
 }
 .floor-plan-content-item {
   background-size: cover;
   background-position: center;
   background-image: url('../../img/floor-plans/default.jpg');
+}
+.floor-plan-content-square .floor-plan-content-item {
+  background-image: url('../../img/floor-plans/square-house.jpg');
 }
 
 .floor-plan-content svg.overlay .flat {

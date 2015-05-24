@@ -121,9 +121,7 @@
 
       <div class="sliding-popup" id="floor-plan-popup">
         <div class="floor-plan">
-          <div class="big-screens floor-plan-caption">
-            <span class="floor-plan-caption-index">1</span> корпус
-          </div>
+          <div class="big-screens floor-plan-caption"></div>
           <div class="floor-plan-content">
             <div class="floor-plan-content-item"></div>
 
@@ -136,6 +134,45 @@
             	<path class="flat" d="M750,388V18h525v370H750z"/>
             	<path class="flat" d="M1286,820h187V116h-187v283h-181v102h181V820z"/>
             	<path class="flat" d="M905,512h370v308H905V512z"/>
+            </svg>
+
+            <div class="floor-plan-content-tooltips">
+              <div class="floor-plan-content-tooltips-item"></div>
+              <div class="floor-plan-content-tooltips-item"></div>
+              <div class="floor-plan-content-tooltips-item"></div>
+              <div class="floor-plan-content-tooltips-item"></div>
+              <div class="floor-plan-content-tooltips-item"></div>
+              <div class="floor-plan-content-tooltips-item"></div>
+            </div>
+          </div>
+
+          <div class="big-screens floor-plan-selector">
+            Выберите этаж:
+            <ul class="floor-plan-selector-list">
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="sliding-popup" id="square-floor-plan-popup">
+        <div class="floor-plan">
+          <div class="big-screens floor-plan-caption"></div>
+          <div class="floor-plan-content floor-plan-content-square">
+            <div class="floor-plan-content-item"></div>
+
+            <svg class="big-screens overlay" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            	 viewBox="0 0 1490 838" xml:space="preserve">
+
+              <path class="flat" d="M697.5,824.5h-120v-16h-202v-268h322V824.5z"/>
+              <path class="flat" d="M697.5,531.5h-337v-225h337V531.5z"/>
+              <path class="flat" d="M750.5,298.5h-375v-269h202v-16h173V298.5z"/>
+            	<path class="flat" d="M758.5,298.5v-285h173v16h202v269H758.5z"/>
+            	<path class="flat" d="M811.5,532.5v-226h338v226H811.5z"/>
+            	<path class="flat" d="M812.5,824.5v-284h321v268h-202v16H812.5z"/>
             </svg>
 
             <div class="floor-plan-content-tooltips">
@@ -297,10 +334,10 @@
               <img src="img/svg/building-hovers/2-4.svg"
                 data-offset-x="1076" data-offset-y="424" data-width="395" data-height="366"/>
             </a>
-            <!-- <a href="#" class="show-popup" data-popup-id="floor-plan-popup" data-building-index="10">
+            <a href="#" class="show-popup" data-popup-id="square-floor-plan-popup" data-building-index="10">
               <img src="img/svg/building-hovers/2-3.svg"
                 data-offset-x="1347" data-offset-y="613" data-width="447" data-height="425"/>
-            </a> -->
+            </a>
             <a href="#" class="show-popup" data-popup-id="floor-plan-popup" data-building-index="2">
               <img src="img/svg/building-hovers/2-2.svg"
                 data-offset-x="393" data-offset-y="353" data-width="425" data-height="370"/>
@@ -317,10 +354,10 @@
               <img src="img/svg/building-hovers/1-6.svg"
                 data-offset-x="1786" data-offset-y="228" data-width="437" data-height="415"/>
             </a>
-            <!-- <a href="#" class="show-popup" data-popup-id="floor-plan-popup" data-building-index="10">
+            <a href="#" class="show-popup" data-popup-id="square-floor-plan-popup" data-building-index="10">
               <img src="img/svg/building-hovers/1-5.svg"
                 data-offset-x="2285" data-offset-y="347" data-width="637" data-height="443"/>
-            </a> -->
+            </a>
             <a href="#" class="show-popup" data-popup-id="floor-plan-popup" data-building-index="5">
               <img src="img/svg/building-hovers/1-4.svg"
                 data-offset-x="1437" data-offset-y="346" data-width="676" data-height="416"/>

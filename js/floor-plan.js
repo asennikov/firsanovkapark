@@ -3,23 +3,27 @@ var setBookingStatuses = function(floor) {
   floor = floor || 0;
 
   if (buildings && buildings.length) {
-    $('.flat').each(function(flat) {
-      var booked = buildings[building].floors[floor].flats[flat];
-      var hover = $(this);
-      var tooltip = $('.floor-plan-content-tooltips-item:eq(' + flat + ')');
+    $('.floor-plan-content').each(function() {
+      var floorPlan = $(this);
 
-      hover.off('click');
-      tooltip.off('click');
+      floorPlan.find('.flat').each(function(flat) {
+        var booked = buildings[building].floors[floor].flats[flat];
+        var hover = $(this);
+        var tooltip = floorPlan.find('.floor-plan-content-tooltips-item:eq(' + flat + ')');
 
-      if (booked) {
-        hover.attr('class', 'booked flat');
-        tooltip.addClass('booked').text('Забронировано').show();
-      }
-      else {
-        hover.attr('class', 'flat').click(showApplicationPopup);
-        tooltip.removeClass('booked').text('Оставить заявку');
-        tooltip.click(showApplicationPopup).hide();
-      }
+        hover.off('click');
+        tooltip.off('click');
+
+        if (booked) {
+          hover.attr('class', 'booked flat');
+          tooltip.addClass('booked').text('Забронировано').show();
+        }
+        else {
+          hover.attr('class', 'flat').click(showApplicationPopup);
+          tooltip.removeClass('booked').text('Оставить заявку');
+          tooltip.click(showApplicationPopup).hide();
+        }
+      });
     });
   }
 };
@@ -64,7 +68,8 @@ $(document).ready(function() {
   $('.floor-plan-selector li a').click(function() {
     var activeSelectorItem = $('.floor-plan-selector li.active');
     var selectorItem = $(this).parent();
-    var selectedFloor = selectorItem.index('.floor-plan-selector li');
+    var selectorItems = $(this).parents('.floor-plan-selector').find('li');
+    var selectedFloor = selectorItems.index(selectorItem);
 
     if (!selectorItem.hasClass('active')) {
       activeSelectorItem.removeClass('active');
