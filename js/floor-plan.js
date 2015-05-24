@@ -1,5 +1,5 @@
 var setBookingStatuses = function(floor) {
-  var building = parseInt($('.floor-plan-caption-index').text().trim(), 10) - 1;
+  var building = parseInt($('.floor-plan').attr('selected-building'), 10) - 1;
   floor = floor || 0;
 
   if (buildings && buildings.length) {

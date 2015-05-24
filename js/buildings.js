@@ -1,6 +1,7 @@
 var buildings = [
   // 1
   {
+    name: 'Корпус 1',
     floors: [
       {
         flats: [
@@ -36,6 +37,8 @@ var buildings = [
   },
   // 2
   {
+
+    name: 'Корпус 2',
     floors: [
       {
         flats: [
@@ -71,6 +74,8 @@ var buildings = [
   },
   // 3
   {
+
+    name: 'Корпус 5',
     floors: [
       {
         flats: [
@@ -106,6 +111,8 @@ var buildings = [
   },
   // 4
   {
+
+    name: 'Дом 28 (построен)',
     floors: [
       {
         flats: [
@@ -141,6 +148,8 @@ var buildings = [
   },
   // 5
   {
+
+    name: 'Дом 30 (построен)',
     floors: [
       {
         flats: [
@@ -176,6 +185,8 @@ var buildings = [
   },
   // 6
   {
+
+    name: 'Корпус 4 подъезд 1',
     floors: [
       {
         flats: [
@@ -211,6 +222,8 @@ var buildings = [
   },
   // 7
   {
+
+    name: 'Корпус 4 подъезд 2',
     floors: [
       {
         flats: [
@@ -246,6 +259,8 @@ var buildings = [
   },
   // 8
   {
+
+    name: 'Корпус 5 подъезд 1',
     floors: [
       {
         flats: [
@@ -281,6 +296,8 @@ var buildings = [
   },
   // 9
   {
+
+    name: 'Корпус 5 подъезд 2',
     floors: [
       {
         flats: [
@@ -316,6 +333,8 @@ var buildings = [
   },
   // 10
   {
+
+    name: 'Корпус 6',
     floors: [
       {
         flats: [

@@ -31,7 +31,8 @@ $(document).ready(function(){
       }
       else if (popupId === 'floor-plan-popup') {
         var selectedBuildingIndex = $(this).data('building-index');
-        $('.floor-plan-caption-index').text(selectedBuildingIndex);
+        $('.floor-plan').attr('selected-building', selectedBuildingIndex);
+        $('.floor-plan-caption').text(buildings[selectedBuildingIndex - 1].name);
         $('.floor-plan-selector li a:first').click();
       }
     }
