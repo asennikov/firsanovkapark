@@ -21,7 +21,7 @@ var buildings = [
           true,
           false,
           false,
-          false,
+          true,
           true
         ]
       },
@@ -209,7 +209,7 @@ var buildings = [
           true,
           true,
           true,
-          true,
+          false,
           true
         ]
       },
@@ -231,7 +231,7 @@ var buildings = [
           true,
           true,
           false,
-          true
+          false
         ]
       },
       {
@@ -240,15 +240,15 @@ var buildings = [
           false,
           false,
           false,
-          false,
-          false
+          true,
+          true
         ]
       }
     ]
   },
   // 6
   {
-    name: 'Корпус 4 подъезд 1',
+    name: 'Корпус 3 подъезд 1',
     floors: [
       {
         floor_plan: 'default',
@@ -348,7 +348,7 @@ var buildings = [
   },
   // 8
   {
-    name: 'Корпус 5 подъезд 1',
+    name: 'Корпус 4 подъезд 1',
     floors: [
       {
         floor_plan: 'default',
@@ -398,7 +398,7 @@ var buildings = [
   },
   // 9
   {
-    name: 'Корпус 5 подъезд 2',
+    name: 'Корпус 4 подъезд 2',
     floors: [
       {
         floor_plan: 'default',
@@ -448,7 +448,7 @@ var buildings = [
   },
   // 10
   {
-    name: 'Корпус 6',
+    name: 'Корпус 5',
     floors: [
       {
         floor_plan: 'square_house',
