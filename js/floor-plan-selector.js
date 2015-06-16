@@ -1,29 +1,49 @@
+var selectedBuilding;
+
+var setFloorPlan = function(floor) {
+  var floorPlanType = selectedBuilding.floors[floor].floor_plan;
+  var floorPlanOptions = floorPlans[floorPlanType];
+  var overlay = $('.floor-plan-content .overlay');
+  var tooltips = $('.floor-plan-content-tooltips');
+
+
+  $('.floor-plan-content-item').css({
+    'background-image': 'url(' + floorPlanOptions.img + ')'
+  });
+
+  overlay.html('');
+  tooltips.html('');
+
+  floorPlanOptions.flats.forEach(function(flatShape) {
+    overlay.append('<path class="flat" d="' + flatShape + '"/>');
+    tooltips.append('<div class="floor-plan-content-tooltips-item"></div>');
+  });
+  $(".floor-plan-content").html($(".floor-plan-content").html());
+};
+
 var setBookingStatuses = function(floor) {
-  var building = parseInt($('.floor-plan').attr('selected-building'), 10) - 1;
   floor = floor || 0;
 
   if (buildings && buildings.length) {
-    $('.floor-plan-content').each(function() {
-      var floorPlan = $(this);
+    var floorPlan = $('.floor-plan-content');
 
-      floorPlan.find('.flat').each(function(flat) {
-        var booked = buildings[building].floors[floor].flats[flat];
-        var hover = $(this);
-        var tooltip = floorPlan.find('.floor-plan-content-tooltips-item:eq(' + flat + ')');
+    floorPlan.find('.flat').each(function(flat) {
+      var booked = selectedBuilding.floors[floor].flats[flat];
+      var hover = $(this);
+      var tooltip = floorPlan.find('.floor-plan-content-tooltips-item:eq(' + flat + ')');
 
-        hover.off('click');
-        tooltip.off('click');
+      hover.off('click');
+      tooltip.off('click');
 
-        if (booked) {
-          hover.attr('class', 'booked flat');
-          tooltip.addClass('booked').text('Забронировано').show();
-        }
-        else {
-          hover.attr('class', 'flat').click(showApplicationPopup);
-          tooltip.removeClass('booked').text('Оставить заявку');
-          tooltip.click(showApplicationPopup).hide();
-        }
-      });
+      if (booked) {
+        hover.attr('class', 'booked flat');
+        tooltip.addClass('booked').text('Забронировано').show();
+      }
+      else {
+        hover.attr('class', 'flat').click(showApplicationPopup);
+        tooltip.removeClass('booked').text('Оставить заявку');
+        tooltip.click(showApplicationPopup).hide();
+      }
     });
   }
 };
@@ -61,10 +81,7 @@ var setHoverInteractions = function() {
   });
 };
 
-$(document).ready(function() {
-  setTooltipPositions();
-  setHoverInteractions();
-
+var initFloorPlanSelector = function() {
   $('.floor-plan-selector li a').click(function() {
     var activeSelectorItem = $('.floor-plan-selector li.active');
     var selectorItem = $(this).parent();
@@ -77,11 +94,16 @@ $(document).ready(function() {
 
       $('.floor-plan-content-item').fadeTo(200, 0.8, function() {
         $(this).fadeTo(200, 1);
-      })
+      });
     }
+
+    setFloorPlan(selectedFloor);
+
+    setTooltipPositions();
+    setHoverInteractions();
 
     setBookingStatuses(selectedFloor);
 
     return false;
   });
-});
+};

@@ -4,6 +4,7 @@ var buildings = [
     name: 'Корпус 1',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           false,
           true,
@@ -14,6 +15,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           true,
@@ -24,6 +26,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -34,6 +37,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -50,6 +54,7 @@ var buildings = [
     name: 'Корпус 2',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           false,
           true,
@@ -60,6 +65,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           true,
           true,
@@ -70,6 +76,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           true,
@@ -80,6 +87,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -96,6 +104,7 @@ var buildings = [
     name: 'Корпус 5',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -106,6 +115,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -116,6 +126,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -126,6 +137,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -142,6 +154,7 @@ var buildings = [
     name: 'Дом 28 (построен)',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           true,
           true,
@@ -152,6 +165,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           true,
           true,
@@ -162,6 +176,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           true,
@@ -172,6 +187,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -188,6 +204,7 @@ var buildings = [
     name: 'Дом 30 (построен)',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           true,
           true,
@@ -198,6 +215,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           true,
           true,
@@ -208,6 +226,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           true,
           true,
@@ -218,6 +237,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -234,6 +254,7 @@ var buildings = [
     name: 'Корпус 4 подъезд 1',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -244,6 +265,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -254,6 +276,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -264,6 +287,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -280,6 +304,7 @@ var buildings = [
     name: 'Корпус 4 подъезд 2',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -290,6 +315,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -300,6 +326,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -310,6 +337,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -326,6 +354,7 @@ var buildings = [
     name: 'Корпус 5 подъезд 1',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -336,6 +365,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -346,6 +376,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -356,6 +387,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -372,6 +404,7 @@ var buildings = [
     name: 'Корпус 5 подъезд 2',
     floors: [
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -382,6 +415,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -392,6 +426,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -402,6 +437,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'default',
         flats: [
           false,
           false,
@@ -418,6 +454,7 @@ var buildings = [
     name: 'Корпус 6',
     floors: [
       {
+        floor_plan: 'square_house',
         flats: [
           false,
           false,
@@ -428,6 +465,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'square_house',
         flats: [
           false,
           false,
@@ -438,6 +476,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'square_house',
         flats: [
           false,
           false,
@@ -448,6 +487,7 @@ var buildings = [
         ]
       },
       {
+        floor_plan: 'square_house',
         flats: [
           false,
           false,

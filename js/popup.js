@@ -29,13 +29,20 @@ $(document).ready(function(){
         $('.application-success').hide();
         $('.application-form').show();
       }
-      else if (popupId === 'floor-plan-popup' ||
-        popupId === 'square-floor-plan-popup')
-      {
+      else if (popupId === 'floor-plan-popup') {
         var selectedBuildingIndex = $(this).data('building-index');
+        selectedBuilding = buildings[selectedBuildingIndex - 1];
+
         $('.floor-plan').attr('selected-building', selectedBuildingIndex);
-        $('.floor-plan-caption').text(buildings[selectedBuildingIndex - 1].name);
-        $('.floor-plan-selector li a:first').click();
+        $('.floor-plan-caption').text(selectedBuilding.name);
+
+        $('.floor-plan-selector-list').html('');
+        selectedBuilding.floors.forEach(function(floor, index) {
+          $('.floor-plan-selector-list').append('<li><a href="#">'+(index + 1)+'</a></li>');
+        });
+
+        initFloorPlanSelector();
+        $('.floor-plan-selector-list li a:first').click();
       }
     }
 
