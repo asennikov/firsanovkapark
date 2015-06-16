@@ -187,9 +187,8 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '4etaj_d28and30',
         flats: [
-          false,
           false,
           false,
           false,
@@ -237,9 +236,8 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '4etaj_d28and30',
         flats: [
-          false,
           false,
           false,
           false,
