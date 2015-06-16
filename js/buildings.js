@@ -4,7 +4,7 @@ var buildings = [
     name: 'Корпус 1',
     floors: [
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           false,
           true,
@@ -26,7 +26,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           false,
           false,
@@ -37,7 +37,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           false,
           false,
@@ -65,7 +65,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           true,
           true,
@@ -76,7 +76,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           false,
           true,
@@ -87,7 +87,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           false,
           false,
@@ -154,7 +154,7 @@ var buildings = [
     name: 'Дом 28 (построен)',
     floors: [
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           true,
           true,
@@ -165,7 +165,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           true,
           true,
@@ -176,7 +176,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           false,
           true,
@@ -203,7 +203,7 @@ var buildings = [
     name: 'Дом 30 (построен)',
     floors: [
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           true,
           true,
@@ -214,7 +214,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
           true,
           true,
@@ -225,13 +225,12 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: 'd30_3etaj',
         flats: [
           true,
           true,
           true,
           false,
-          true,
           true
         ]
       },
