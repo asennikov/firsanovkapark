@@ -15,7 +15,7 @@ var buildings = [
         ]
       },
       {
-        floor_plan: 'default',
+        floor_plan: '2etaj_korpus1_and1etaj_korpus2',
         flats: [
           false,
           true,
@@ -54,7 +54,7 @@ var buildings = [
     name: 'Корпус 2',
     floors: [
       {
-        floor_plan: 'default',
+        floor_plan: '2etaj_korpus1_and1etaj_korpus2',
         flats: [
           false,
           true,

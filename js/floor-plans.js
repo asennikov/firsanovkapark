@@ -1,5 +1,5 @@
 var floorPlans = {
-  default: {
+  'default': {
     img: '/img/floor-plans/default.jpg',
     flats: [
       'M754,792H585v29H215V511h539V792z',
@@ -10,7 +10,7 @@ var floorPlans = {
       'M905,512h370v308H905V512z'
     ]
   },
-  square_house: {
+  'square_house': {
     img: '/img/floor-plans/square-house.jpg',
     flats: [
       'M697.5,824.5h-120v-16h-202v-268h322V824.5z',
@@ -19,6 +19,17 @@ var floorPlans = {
       'M758.5,298.5v-285h173v16h202v269H758.5z',
       'M811.5,532.5v-226h338v226H811.5z',
       'M812.5,824.5v-284h321v268h-202v16H812.5z'
+    ]
+  },
+  '2etaj_korpus1_and1etaj_korpus2': {
+    img: '/img/floor-plans/2etaj_korpus1_and1etaj_korpus2.jpg',
+    flats: [
+      'M753.5,510.5v279h-168v28h-176v-307H753.5z',
+      'M402.5,499.5v318h-381v-700h196v-98h190v379h60v101H402.5z',
+      'M740.5,387.5h-326v-368h326V387.5z',
+      'M1273.5,387.5h-523v-368h523V387.5z',
+      'M1469.5,117.5h-186v281h-180v101h181v318h185V117.5z',
+      'M1272.5,817.5v-307h-368v307H1272.5z'
     ]
   }
 };
