@@ -19,6 +19,9 @@ var setFloorPlan = function(floor) {
     tooltips.append('<div class="floor-plan-content-tooltips-item"></div>');
   });
   $(".floor-plan-content").html($(".floor-plan-content").html());
+  $('.floor-plan-content').fadeTo(200, 0.8, function() {
+    $(this).fadeTo(200, 1);
+  });
 };
 
 var setBookingStatuses = function(floor) {
@@ -91,10 +94,6 @@ var initFloorPlanSelector = function() {
     if (!selectorItem.hasClass('active')) {
       activeSelectorItem.removeClass('active');
       selectorItem.addClass('active');
-
-      $('.floor-plan-content-item').fadeTo(200, 0.8, function() {
-        $(this).fadeTo(200, 1);
-      });
     }
 
     setFloorPlan(selectedFloor);
