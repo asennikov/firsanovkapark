@@ -160,17 +160,6 @@ var buildings = [
           true,
           true,
           true,
-          false,
-          true
-        ]
-      },
-      {
-        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
-        flats: [
-          true,
-          true,
-          true,
-          true,
           true,
           true
         ]
@@ -178,7 +167,18 @@ var buildings = [
       {
         floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
         flats: [
-          false,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        floor_plan: '28&30_1_2etaj_and_283etaj_and_korpus1_1_3_4etaj_and_korpus2_2_3_4etaj',
+        flats: [
+          true,
           true,
           true,
           false,
@@ -231,7 +231,7 @@ var buildings = [
           true,
           true,
           false,
-          false
+          true
         ]
       },
       {
@@ -240,8 +240,8 @@ var buildings = [
           false,
           false,
           false,
-          true,
-          true
+          false,
+          false
         ]
       }
     ]
@@ -448,7 +448,7 @@ var buildings = [
   },
   // 10
   {
-    name: 'Корпус 5',
+    name: 'Корпус 6',
     floors: [
       {
         floor_plan: 'square_house',
