@@ -11,14 +11,17 @@ var setFloorPlan = function(floor) {
     'background-image': 'url(' + floorPlanOptions.img + ')'
   });
 
-  overlay.html('');
+  overlay.html('<svg version="1.1" xmlns="http://www.w3.org/2000/svg"' +
+                    'xmlns:xlink="http://www.w3.org/1999/xlink"' +
+                    'x="0px" y="0px" viewBox="0 0 1490 838"' +
+                    'xml:space="preserve"></svg');
   tooltips.html('');
 
   floorPlanOptions.flats.forEach(function(flatShape) {
-    overlay.append('<path class="flat" d="' + flatShape + '"/>');
+    overlay.find('svg').append('<path class="flat" d="' + flatShape + '"/>');
     tooltips.append('<div class="floor-plan-content-tooltips-item"></div>');
   });
-  $(".floor-plan-content").html($(".floor-plan-content").html());
+  overlay.html(overlay.html());
   $('.floor-plan-content').fadeTo(200, 0.8, function() {
     $(this).fadeTo(200, 1);
   });
@@ -57,7 +60,7 @@ var showApplicationPopup = function() {
 
 var setTooltipPositions = function() {
   $('.flat').each(function(index) {
-    var svgRect = $('svg.overlay')[0].getBoundingClientRect();
+    var svgRect = $('.overlay svg')[0].getBoundingClientRect();
     var rect = this.getBoundingClientRect();
     var tooltip = $('.floor-plan-content-tooltips-item:eq(' + index + ')');
 

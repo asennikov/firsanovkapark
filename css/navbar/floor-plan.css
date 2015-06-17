@@ -11,7 +11,7 @@
   height: 419px;
 }
 
-.floor-plan-content svg.overlay,
+.floor-plan-content .overlay svg,
 .floor-plan-content-item,
 .floor-plan-content-tooltips {
   position: absolute;
@@ -30,7 +30,7 @@
   background-image: url('../../img/floor-plans/square-house.jpg');
 }
 
-.floor-plan-content svg.overlay .flat {
+.floor-plan-content .overlay svg .flat {
   stroke-width: 0;
   clip-rule: evenodd;
   fill: #cdff6a;
@@ -39,14 +39,14 @@
   opacity: 0;
   outline: none;
 }
-.floor-plan-content svg.overlay .flat.booked {
+.floor-plan-content .overlay svg .flat.booked {
   fill: #f8cccd;
 }
-.floor-plan-content svg.overlay .flat.booked,
-.floor-plan-content svg.overlay .flat:hover {
+.floor-plan-content .overlay svg .flat.booked,
+.floor-plan-content .overlay svg .flat:hover {
   opacity: 0.7;
 }
-.floor-plan-content svg.overlay .flat:not(.booked) {
+.floor-plan-content .overlay svg .flat:not(.booked) {
   cursor: pointer;
 }
 
@@ -85,6 +85,7 @@
 
 .floor-plan-content-tooltips {
   pointer-events: none;
+  z-index: 10;
 }
 .floor-plan-content-tooltips-item {
   position: absolute;
